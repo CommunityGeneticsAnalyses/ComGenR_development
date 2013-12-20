@@ -27,6 +27,16 @@
 \setcounter{tocdepth}{3}  %%activate to number sections
 \tableofcontents
 
+%%%NOTE: old versions of code are contained in
+%%%ComGenR_developement/src
+
+%%%Tasks
+%%%Organize code
+%%%Start vignette
+%%%Initiate package
+%%%Populate help files
+
+
 \section{Summary}
 
 Community genetics seeks to identify the community level impacts of
