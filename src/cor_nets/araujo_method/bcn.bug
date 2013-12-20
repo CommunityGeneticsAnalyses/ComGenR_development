@@ -1,0 +1,4 @@
+model{
+     x~dbin(p,n)
+     p~dunif(0,1)
+}

@@ -1,0 +1,115 @@
+\documentclass[12pt]{article}
+\usepackage{color}
+\usepackage{cite}
+\usepackage{geometry}                % See geometry.pdf to learn the layout options. There are lots.
+%\usepackage{pdflscape}        %single page landscape
+                                %mode \begin{landscape} \end{landscape}
+\geometry{letterpaper}                   % ... or a4paper or a5paper or ... 
+%\usepackage[parfill]{parskip}    % Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{Sweave}
+\newcommand{\etal}{\textit{et al.}}
+\usepackage{hyperref}  %\hyperref[label_name]{''link text''}
+                       %\hyperlink{label}{anchor caption}
+                       %\hypertarget{label}{link caption}
+\linespread{1.5}
+
+\title{Ecological Co-occurrence Networks}
+\author{M.K. Lau}
+%\date{}                                           % Activate to display a given date or no date
+
+\begin{document}
+\maketitle
+
+\setcounter{tocdepth}{3}  %%activate to number sections
+\tableofcontents
+
+The study of co-occurrence holds promise for presenting a window into
+the interactions among species. Within the last five years, methods
+have been developed that take a network based approach to analyzing
+co-occurrence patterns. The following is a summary of these methods.
+
+\section{Co-occurrence Analyses}
+\subsection{Diamond 1972}
+\begin{itemize}
+\item Summary: originated the analysis of co-occurrence patterns using
+  checker-board units
+\end{itemize}
+\subsection{Simberloff ?}
+\begin{itemize}
+\item Summary: critique of Diamond
+\end{itemize}
+\subsection{Stone and Roberts 1990}
+\begin{itemize}
+\item Summary: introduced the use of the average checkerboard unit
+  (i.e. the C-Score)
+\end{itemize}
+\subsection{Gotelli 2001}
+\begin{itemize}
+\item Summary: organized co-occurrence analyses within a null modeling
+  framework
+\end{itemize}
+
+\section{Network Inference}
+\subsection{Zhang et al. 2007}
+\begin{itemize}
+\item Summary: uses pairwise correlations without an alpha adjustment
+\item Pros:
+\item Cons:
+\end{itemize}
+\subsection{Vera-Licona and Laubenbacher 2009}
+\begin{itemize}
+\item Summary: uses evolutionary algorithm to infer the structure of a
+  polynomial dynamical system
+\item Pros:
+\item Cons:
+\end{itemize}
+\subsection{Araujo et al. 2011}
+\begin{itemize}
+\item Summary: uses joint probabilities and a parametric test of
+  difference from the null expectation
+\item Pros:
+\item Cons:
+\end{itemize}
+\subsection{Faisal et al. 2011}
+\begin{itemize}
+\item Summary: compares six methods (GCM, LASSO (linear), LASSO
+  (logistic), SBR, Structure MCMC and Population Simulation)
+\item Pros:
+\item Cons:
+\end{itemize}
+\subsection{Ovaskainen et al. 2011}
+\begin{itemize}
+\item Summary: uses a Bayesian hierarchical modeling approach
+\item Pros:
+\item Cons:
+\end{itemize}
+
+
+%% %%Figure construction
+%% <<echo=false,results=hide,label=fig1,include=false>>=
+%% @ 
+
+
+%% %%Figure plotting
+%% \begin{figure} 
+%% \begin{center} 
+%% <<label=fig1,fig=TRUE,echo=false>>=
+%% <<fig1>> 
+%% @ 
+%% \end{center} 
+%% \caption{}
+%% \label{fig:one}
+%% \end{figure}
+
+
+%% %%Activate for bibtex vibliography
+%% \cite{goossens93}
+%% \bibliographystyle{plain}
+%% \bibliography{/Users/Aeolus/Documents/bibtex/biblib}
+
+
+\end{document}  
+
+

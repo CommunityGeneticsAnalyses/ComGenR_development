@@ -1,0 +1,26 @@
+\begin{thebibliography}{1}
+
+\bibitem{araujo2011}
+M.B. Ara\'ujo, A.~Rozenfeld, C.~Rahbek, and P.A. Marquet.
+\newblock Using species co-occurrence networks to assess the impacts of climate
+  change.
+\newblock {\em Ecography}, 34:897--908, 2011.
+
+\bibitem{sna}
+Carter~T. Butts.
+\newblock {\em sna: Tools for Social Network Analysis}, 2010.
+\newblock R package version 2.2-0.
+
+\bibitem{mccarthy2007}
+M.A. McCarthy.
+\newblock {\em Bayesian Methods for Ecology}.
+\newblock Cambridge University Press, Cambridge, U.K., 2007.
+
+\bibitem{vegan}
+Jari Oksanen, F.~Guillaume Blanchet, Roeland Kindt, Pierre Legendre, Peter~R.
+  Minchin, R.~B. O'Hara, Gavin~L. Simpson, Peter Solymos, M.~Henry~H. Stevens,
+  and Helene Wagner.
+\newblock {\em vegan: Community Ecology Package}, 2012.
+\newblock R package version 2.0-3.
+
+\end{thebibliography}

@@ -1,0 +1,78 @@
+%%%NOTE: for help with latex symbols look here http://mirror.unl.edu/ctan/info/symbols/comprehensive/symbols-a4.pdf.
+\documentclass[12pt]{article}
+\usepackage{color}
+\usepackage{cite}
+\usepackage{geometry}                % See geometry.pdf to learn the layout options. There are lots.
+%\usepackage{pdflscape}        %single page landscape
+                                %mode \begin{landscape} \end{landscape}
+\geometry{letterpaper}                   % ... or a4paper or a5paper or ... 
+%\usepackage[parfill]{parskip}    % Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{multicol} % \begin{multicols}{number of columns} \end{multicols}
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{Sweave}
+\newcommand{\etal}{\textit{et al.}}
+\usepackage{hyperref}  %\hyperref[label_name]{''link text''}
+                       %\hyperlink{label}{anchor caption}
+                       %\hypertarget{label}{link caption}
+\linespread{1.5}
+
+\title{ComGenR: Community Genetics Analyses in R}
+\author{M.K. Lau}
+%\date{}                                           % Activate to display a given date or no date
+
+\begin{document}
+\maketitle
+
+\setcounter{tocdepth}{3}  %%activate to number sections
+\tableofcontents
+
+%%%NOTE: old versions of code are contained in
+%%%ComGenR_developement/src
+
+%%%Tasks
+%%%Organize code
+%%%Start vignette
+%%%Initiate package
+%%%Populate help files
+
+
+\section{Summary}
+
+Community genetics seeks to identify the community level impacts of
+evolutionary processes. Thus, this field merges analyses across
+several fields including population genetics and community ecology. In
+this package, I present a core set of functions that provide
+analytical tools for community genetics analyses that can be grouped
+broadly into three categories:
+
+\begin{enumerate}
+\item Compositional Analyses
+\item Quantifying Heritability 
+\item Network and Co-occurrence Modeling
+\end{enumerate}
+
+\section{Compositional Analyses}
+
+\begin{itemize}
+\item PerMANOVA (including dispersion tests)
+\item NMDS (include test using scores)
+\item Cross-hair plots
+\end{itemize}
+
+\section{Quantifying Heritability}
+
+\begin{itemize}
+\item Shuster's calculator
+\end{itemize}
+
+\section{Network and Co-occurrence Modeling}
+
+\begin{itemize}
+\item Araujo's Method
+\item Co-ocurrence using appropriate null model
+\end{itemize}
+
+\end{document}  
+
+
