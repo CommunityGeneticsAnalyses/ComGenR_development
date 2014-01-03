@@ -1,6 +1,7 @@
 ###Functions for the SEEnetR package
 ###Spatial, Ecological and Evolutionary Networks in R
 ###25 Sep 2013
+
 require(vegan)
 require(igraph)
 

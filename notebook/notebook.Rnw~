@@ -64,6 +64,7 @@ broadly into three categories:
 
 \begin{itemize}
 \item Shuster's calculator
+\item Community Simulator from Shuster 2006
 \end{itemize}
 
 \section{Network and Co-occurrence Modeling}
@@ -72,6 +73,21 @@ broadly into three categories:
 \item Araujo's Method
 \item Co-ocurrence using appropriate null model
 \end{itemize}
+
+\subsection*{Network/Co-occurrence Analysis Outline}
+\begin{enumerate}
+\item Model stand level network using all data
+\item Model stand level network using compressed data
+\item Model tree level networks using repeated measurements within
+  trees
+\item Average tree level networks
+\item Model tree level co-occurrence and return C-score, SES and p-values
+\item Model bipartite networks between genotypes and species
+\item Test for correlations between networks
+\item Calculate network distances
+\item Test for nestedness of bipartite networks
+\item Test for modularity 
+\end{enumerate}
 
 \end{document}  
 
