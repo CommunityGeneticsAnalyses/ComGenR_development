@@ -1,7 +1,5 @@
 ###ComGenR - A community genetics analysis package
 
-## package.skeleton(name='ComGenR',path='~/projects/ComGenR')
-
 ## Community genetics seeks to identify the community level impacts of
 ## evolutionary processes. Thus, this field merges analyses across
 ## several fields including population genetics and community ecology. In
@@ -102,64 +100,8 @@ ch.plot <- function(x='ordination matrix',g='groupings',cex=1,buffer=0.1,plot.le
 
 ## II. Quantifying Heritability
 
-###Genotype stats function
-
-mean.g <- function(x='community matrix',g='grouping'){
-  return(apply(x,2,function(x,g) tapply(x,g,mean),g=g))
-}
-
-se.g <- function(x='community matrix',g='grouping'){
-  return(apply(x,2,function(x,g) tapply(x,g,function(x) sd(x)/sqrt(length(x))),g=g))
-}
-
 ## Shuster's calculator
 ## %%Internal - h2c
-
-
-getH2C <- function(x='NMDS axis',g='grouping vector',sibs='sibling proportion (1=clones)'){
-
-g <- as.character(g)
-aov.tab <- matrix(unlist(summary(aov(x~g))),nrow=2)
-if (sibs=='sibling proportion (1=clones)'){sibs <- 1}
-
-#S = number of clones, families, sires, etc.
-S <- length(unique(as.character(g))) 
-#ni = number of individuals in ith clone
-ni <- table(g)
-#n. = total number of inidividuals in the analysis
-n. <- sum(ni)
-#k = ni in expected means squares 
-#= ni if design is balanced 
-#= kl if design is unbalanced
-if (all(ni==ni[1])){
-  k <- mean(ni)
-}else{
-  ##this is kl
-  k <- 1/(S-1)*(n.-(sum(ni^2)/n.))
-}
-#s = sigma here
-#variance among = s2s = (MSs-MSw)/k
-#variance within = s2w = MSw
-#total variance = Vp = s2total = s2s + s2w
-#H2c = community heritability
-s2s <- (aov.tab[1,3]-aov.tab[2,3])/k
-s2w <- aov.tab[2,3]
-s2total <- s2s+s2w
-H2C <- s2s / s2total
-
-###Confidence limits for H2C
-t <- H2C * (1/sibs)
-if (all(ni==ni[1])){
-  SE <- ((2*(((1-t)^2)*(1+(k-1)*t)^2))/(k*(k-1)*(S-1)))^(1/2)
-}else{
-  ##Unbalanced design with kl
-  SE <- ((2*(n.-1)*((1-t)^2)*(1+(k-1)*t)^2)/((k^2)*(n.-S)*(S-1)))^(1/2)
-}
-CI <- SE*1.96
-
-return(c(H2C=H2C,CI=CI,SE=SE))
-
-}
 
 ## Community Simulator from Shuster 2006
 ## %%Internal - cgSim
@@ -169,53 +111,27 @@ return(c(H2C=H2C,CI=CI,SE=SE))
 ###Started 13Dec2013 but taken from work begun in 2012
 ### tree genotypic values - range from 11 to 21
 
-gpmTrees <- function(pheno='phenotype of genotypes',reps='replication'){
-  if (any(pheno=='phenotype of genotypes')){
-    pheno <- c(11.00,12.50,13.75,16.00,14.00,15.25,17.50,16.50,18.75,21.00)
-  }
-  if (reps=='replication'){reps <- 5}
-  trees <- list()
-  for (i in 1:length(pheno)){
-    trees[[i]] <- rep(pheno[i],reps)
-  }
-  return(cbind(geno=gl(length(pheno),reps),pheno=unlist(trees)))
-}
+tree.pheno <- read.csv('../data/trees.txt')
 
 ###Initiate arthropods
-
-gpmCom <- function(n='number of species',het.values=c(5,21),allelic.range=c(0,3)){
-if (n=='number of species'){n <- 25}
-                                        #generate heterozygous alleles for n species
-com <- matrix(NA,nrow=n,ncol=2)
-com[,1] <- runif(n,het.values[1],het.values[2]) #heterozygote value between 5 and 21
-com[,2] <- runif(n,allelic.range[1],allelic.range[2]) #range between 0 and 3
+                                        #generate arthropod alleles for 25 species
+insects <- matrix(NA,nrow=25,ncol=2)
+insects[,1] <- runif(25,5,21) #heterozygote value between 5 and 21
+insects[,2] <- runif(25,0,3) #range between 0 and 3
                                         #map genotype to phenotype
-com. <- com
-com.[,1] <- (com[,1]-0.5*com[,2])/2 #C allelic value = (HET - 0.5*range)/2
-com.[,2] <- (com[,1]+0.5*com[,2])/2 #D allelic value = (HET + 0.5*range)/2
-
-return(com.)
-
-}
-
-##Initiate tree
-
-cgSim <- function(tree.pheno='tree phenotype matrix',insect='community phenotype matrix',reps=10,GG=8,YY=5,VeT=8,Ve=0.1,VeN=15,K=100){
-
-if (any(tree.pheno=='tree phenotype matrix')){tree.pheno <- gpmTrees()}
-if (any(insect=='community phenotype matrix')){insect <- gpmCom()}
-
+insect <- insects
+insect[,1] <- (insects[,1]-0.5*insects[,2])/2 #C allelic value = (HET - 0.5*range)/2
+insect[,2] <- (insects[,1]+0.5*insects[,2])/2 #D allelic value = (HET + 0.5*range)/2
 ###Experimental design
-# reps <- 10 #number of times to run simulation
-# GG <- 8 #number of selection scenarios
-# YY <- 5 #number of environmental scenarios
+reps <- 10 #number of times to run simulation
+GG <- 8 #number of selection scenarios
+YY <- 5 #number of environmental scenarios
 ###Parameter values
-# VeT <- 8 #environmental variance in tree trait influences tree heritability (2 for high H2 and 8 for low H2)
-# Ve <- 0.1 #environmental variance for insect trait
-# VeN <- 15 #step size for environmental variance in interactions (0 15 30 45 60)
-# K <- 100 #insect pop carrying capacity
-
-###Initiate output objects
+VeT <- 8 #environmental variance in tree trait influences tree heritability (2 for high H2 and 8 for low H2)
+Ve <- 0.1 #environmental variance for insect trait
+K <- 100 #insect pop carrying capacity
+VeN <- 15 #step size for environmental variance in interactions (0 15 30 45 60)
+                                        #
 T <- nrow(tree.pheno) #number of trees
 I <- nrow(insect) #number of insects
 art_g <- matrix(NA,nrow=T,ncol=I) #insect gene frequency
@@ -286,11 +202,10 @@ for (RR in 1:reps){
   toc <- Sys.time() #stop stopwatch
   out[[RR]] <- yy.list
 } #end REP loop and END simulation
-
-return(out)
-}
-
-
+###4.344779 per rep
+print(toc-tic)
+dput(out,file=paste('../data/cg_out/lm_output_',as.character(Sys.time()),sep=''))
+dput(out,file='../data/cg_out/cg_output')
 
 ## III. Network and Co-occurrence Modeling
 
@@ -574,3 +489,5 @@ coSym <- function(x='dependency network',zero.na=TRUE){
   }
   return(out)
 }
+
+
