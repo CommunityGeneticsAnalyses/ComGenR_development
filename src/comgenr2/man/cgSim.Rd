@@ -2,7 +2,7 @@
 \alias{cgSim}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-%%  ~~function to do ... ~~
+Community Genetics simulator using the methods of Shuster et al 2006.
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~

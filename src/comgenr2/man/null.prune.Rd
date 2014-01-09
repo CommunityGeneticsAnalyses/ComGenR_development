@@ -2,7 +2,7 @@
 \alias{null.prune}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-%%  ~~function to do ... ~~
+  Pruning function for the Araujo et al. 2011 method.
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~

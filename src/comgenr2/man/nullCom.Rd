@@ -2,7 +2,8 @@
 \alias{nullCom}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-%%  ~~function to do ... ~~
+Generate a set of null communities based on functions in the vegan
+package. 
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~

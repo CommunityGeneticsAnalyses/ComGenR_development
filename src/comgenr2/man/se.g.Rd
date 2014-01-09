@@ -2,7 +2,7 @@
 \alias{se.g}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-%%  ~~function to do ... ~~
+Calculate the standard error for a set of genotypes.
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~

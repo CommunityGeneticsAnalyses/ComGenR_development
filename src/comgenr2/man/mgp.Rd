@@ -2,28 +2,35 @@
 \alias{mgp}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-%%  ~~function to do ... ~~
+Modified graph plotting. 
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
 \usage{
-mgp(scn, com, loc = TRUE, my.coord = "")
+mgp(net='species network',com='community matrix',my.coord='',loc=TRUE,v.scale=3,v.min=0.1)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
-  \item{scn}{
+  \item{net}{
 %%     ~~Describe \code{scn} here~~
 }
   \item{com}{
 %%     ~~Describe \code{com} here~~
 }
-  \item{loc}{
-%%     ~~Describe \code{loc} here~~
-}
   \item{my.coord}{
 %%     ~~Describe \code{my.coord} here~~
 }
+  \item{loc}{
+%%     ~~Describe \code{loc} here~~
+}
+  \item{v.scale}{
+%%     ~~Describe \code{loc} here~~
+}
+  \item{v.min}{
+%%     ~~Describe \code{loc} here~~
+}
+
 }
 \details{
 %%  ~~ If necessary, more details than the description above ~~

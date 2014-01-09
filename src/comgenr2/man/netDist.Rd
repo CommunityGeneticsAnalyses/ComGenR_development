@@ -2,7 +2,7 @@
 \alias{netDist}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-%%  ~~function to do ... ~~
+  Network distance for a set of networks.
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~

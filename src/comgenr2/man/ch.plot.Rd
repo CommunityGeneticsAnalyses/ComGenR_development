@@ -2,7 +2,7 @@
 \alias{ch.plot}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-%%  ~~function to do ... ~~
+Cross-hair plotting functions for 2D NMDS plots. 
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~

@@ -65,9 +65,7 @@ for (RR in 1:reps){
 ###Equation 7 from MS - art predicted population size as a function of loads and ecological variance
           art_pop[i,j] <- K * (1 - gen_load[i,j] - dem_load[i,j])+runif(1)*VeN*(y-1)-VeN*(y-1)/2
 ###preventing art pops from going negative
-###NOTE: this code was changed from the original which made 
-###zero or negative species into runif(1)*3)
-          if (art_pop[i,j] < 0){art_pop[i,j] <- 0.00001}
+          if (art_pop[i,j] < 0){art_pop[i,j] <- 0}
         } #end insect loop
       } #end tree loop
 ###keeping track of which iteration the simulation is on reps*GG*(y-1)+reps*(z-1)+RR

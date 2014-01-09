@@ -2,7 +2,7 @@
 \alias{gpmCom}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-%%  ~~function to do ... ~~
+Genotype-phenotype mapping function for input into the cgSim function. 
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~

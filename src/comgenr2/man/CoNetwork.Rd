@@ -2,7 +2,7 @@
 \alias{CoNetwork}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-%%  ~~function to do ... ~~
+Co-Occurrence based network modeling.
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~

@@ -2,7 +2,7 @@
 \alias{gpmTrees}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-%%  ~~function to do ... ~~
+Foundation tree species genotype-phenotype mapping function for cgSim. 
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
