@@ -30,11 +30,10 @@
 %%%NOTE: old versions of code are contained in
 %%%ComGenR_developement/src
 
-%%%Tasks
-%%%Organize code
-%%%Start vignette
-%%%Initiate package
-%%%Populate help files
+%%%Package building
+%%Remove tilde files
+%%find . -type f -name '*~' | xargs rm -f
+
 
 
 \section{Summary}

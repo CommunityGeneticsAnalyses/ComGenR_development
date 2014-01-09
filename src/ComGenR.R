@@ -79,7 +79,7 @@ pair.permanova <- function(x,f,nits=999){
 ## xtype[xtype=='trihybride'] <- 'Trihybrid'
 ## ch.plot(nmds.min(nms.),xtype,cex=2,plot.legend=TRUE,loc='topright')
 
-ch.plot <- function(x='ordination matrix',g='groupings',cex=1,buffer=0.1,plot.legend=TRUE,loc='topleft'){
+ch.plot <- function(x='ordination matrix',g='groupings',cex=1,plot.legend=FALSE,loc='topleft'){
   mu <- apply(x,2,function(x,g) tapply(x,g,mean),g=g)
   se <- apply(x,2,function(x,g) tapply(x,g,function(x) sd(x)/sqrt(length(x))),g=g)
   mu <- na.omit(mu)
@@ -387,15 +387,11 @@ calcDepend <- function(a,b){
 }
 
 ###Dependency Network
-dep.net <- function(x='species in cols',zero.na=TRUE,prune=TRUE,diag.zero=TRUE,pos=TRUE){
+dep.net <- function(x='species in cols',zero.na=TRUE,prune=TRUE,diag.zero=TRUE){
   out <- matrix(NA,nrow=ncol(x),ncol=ncol(x))
   for (i in 1:ncol(x)){
     for (j in 1:ncol(x)){
-      if (pos){
         out[i,j] <- calcDepend(x[,i],x[,j])
-      }else{
-        out[i,j] <- negDepend(x[,i],x[,j])
-      }
     }
   }
   if (prune){
@@ -421,7 +417,7 @@ percThreshold <- function(x='network matrix',step.size=0.01){
 }
 
 
-CoNetwork <- function(x,plot.net=TRUE,scalar=3,min.vsize=0.1){
+CoNetwork <- function(x='community matrix'){
 ###Runs all steps of the process for modeling
 ###Co-occurrence networks described by Araujo et al. 2011.
 ###It depends on the seenetR.R script which contains both the
@@ -430,9 +426,6 @@ CoNetwork <- function(x,plot.net=TRUE,scalar=3,min.vsize=0.1){
 
 ###Inputs: 
 #x = matrix of co-occurrence with species in columns
-#plot.net = logical. Should the network be plotted?
-#scalar = scales the size of all vertices
-#min.vsize = sets the minimum size for vertices
 
 #Step 1. Calculate a Bray-Curtis distance matrix
 
@@ -447,13 +440,6 @@ bc.d[prune==0] <- 0
 thresh <- percThreshold(bc.d)$threshold
 pruned.net <- bc.d
 pruned.net[bc.d<thresh] <- 0
-
-if (plot.net){
-  v.cex <- apply(x,2,sum) #scaling node size by the log of species frequencies
-  v.cex <- (((v.cex/sum(v.cex))/max((v.cex/sum(v.cex))))*scalar)+min.vsize
-  gplot(abs(pruned.net),displaylabels=TRUE,gmode='graph',pad=1.5,
-        edge.lwd=(abs(pruned.net)),vertex.cex=v.cex,vertex.col='grey')
-}
 
 return(pruned.net)
 

@@ -1,0 +1,142 @@
+%%%NOTE: for help with latex symbols look here http://mirror.unl.edu/ctan/info/symbols/comprehensive/symbols-a4.pdf.
+\documentclass[12pt]{article}
+\usepackage{color}
+\usepackage{cite}
+\usepackage{geometry}                % See geometry.pdf to learn the layout options. There are lots.
+%\usepackage{pdflscape}        %single page landscape
+                                %mode \begin{landscape} \end{landscape}
+\geometry{letterpaper}                   % ... or a4paper or a5paper or ... 
+%\usepackage[parfill]{parskip}    % Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{multicol} % \begin{multicols}{number of columns} \end{multicols}
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{Sweave}
+\newcommand{\etal}{\textit{et al.}}
+\usepackage{hyperref}  %\hyperref[label_name]{''link text''}
+                       %\hyperlink{label}{anchor caption}
+                       %\hypertarget{label}{link caption}
+\linespread{1.5}
+
+\title{ComGenR: Community Genetics Analyses in R}
+\author{M.K. Lau}
+%\date{}                                           % Activate to display a given date or no date
+
+\begin{document}
+\maketitle
+
+Community Genetics is a field of biology that works at the interface
+between ecological genetics and community ecology. Being inherently
+multi-disciplinary, the analytics involved have developed in separate
+fields. \textbf{ComGenR} is intended to synthesize these analytical
+techniques and facilitate new analytically and computationally driven
+research tools. Here, we present an introduction to the package,
+broken into five main sections:
+
+\setcounter{tocdepth}{3}  %%activate to number sections
+\tableofcontents  
+
+\section{Community Genetics Data}
+
+%Species abundances
+%Genetic information
+%Brief mention of other packages
+%Importing data
+
+\section{Community Composition}
+
+%Heatmap
+%NMDS - regular and cross-hair
+%NMDS - stress and variance explained
+%Overlaying genetic info
+%Overlaying environmental info
+%Vectors - species
+
+%PERMANOVA - BC-distance, Clarke adjustment and adonis
+%Mantel - warning about ecodist conflict
+%Pairwise PERMANOVA - p-value adjustments
+%Relativising - species max 
+
+%Species genotype means and se
+
+\section{Modeling and Quantifying Heritability}
+
+%cgSIM - genetic versus environmental variance
+%Isolating an NMDS axis - pros-cons and possible pitfalls
+%getH2C - balanced and unbalanced design auto-detect
+
+\section{Network Modeling and Co-occurrence Analyses}
+
+%What is a network?
+%Why do we care?
+%What do co-occurrences tell us?
+%Co-occurrence (overall)
+%Network (overall)
+%Network plot
+%Network statistics
+
+\section{A Template Analysis}
+
+%PERMANOVA - genotype
+%Paired PERMANOVA
+%NMDS - with overlays
+%Calculate heritability
+%Co-occurrence analysis (R1)
+%Network model (stand - all and condensed)
+%Tree level co-occurrence (genotype effect test)
+%Tree level network (average)
+
+<<>>=
+
+library(ComGenR)
+                                        #model community data
+trees <- gpmTrees()
+com.sim <- cgSim(tree.pheno=trees,reps=1,YY=5,GG=7)
+com <- com.sim[[1]][[5]][[7]]
+geno <- factor(trees[,1])
+                                        #composition
+adonis(com~geno)
+nms <- nmds(vegdist(com),2,2)
+my.nms <- nmds.min(nms)
+ch.plot(my.nms,g=geno,plot.legend=FALSE)
+                                        #networks
+com.net <- com
+com.net[com<=10] <- 0
+net <- CoNetwork(com.net,plot.net=FALSE)
+mgp(net,com.net,displaylabels=TRUE)
+mgp(min.net(net,com.net)[[1]],min.net(net,com.net)[[2]],displaylabels=TRUE)
+                                        #co-occurrence
+com.nul <- nullCom(com.net)
+cs.nul <- unlist(lapply(com.nul,cscore))
+cs.obs <- cscore(com.net)
+hist(cs.nul,xlim=c(5,29))
+abline(v=cs.obs,col=2,lwd=3,lty=2)
+p.val <- length(cs.nul[cs.nul<=cs.obs])/length(cs.nul)
+ses <- (cs.obs-mean(cs.nul))/sd(cs.nul)
+
+@ 
+
+%% %%Figure construction
+%% <<echo=false,results=hide,label=fig1,include=false>>=
+%% @ 
+
+%% %%Figure plotting
+%% \begin{figure} 
+%% \begin{center} 
+%% <<label=fig1,fig=TRUE,echo=false>>=
+%% <<fig1>> 
+%% @ 
+%% \end{center} 
+%% \caption{}
+%% \label{fig:one}
+%% \end{figure}
+
+
+%% %%Activate for bibtex vibliography
+%% \cite{goossens93}
+%% \bibliographystyle{plain}
+%% \bibliography{/Users/Aeolus/Documents/bibtex/biblib}
+
+
+\end{document}  
+
+
