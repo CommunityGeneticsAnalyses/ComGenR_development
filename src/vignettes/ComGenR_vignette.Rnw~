@@ -101,7 +101,7 @@ ch.plot(my.nms,g=geno,plot.legend=FALSE)
                                         #networks
 com.net <- com
 com.net[com<=10] <- 0
-net <- CoNetwork(com.net,plot.net=FALSE)
+net <- CoNetwork(com.net)
 mgp(net,com.net,displaylabels=TRUE)
 mgp(min.net(net,com.net)[[1]],min.net(net,com.net)[[2]],displaylabels=TRUE)
                                         #co-occurrence

@@ -67,8 +67,18 @@ broken into five main sections:
 \section{Network Modeling and Co-occurrence Analyses}
 
 %What is a network?
+
 %Why do we care?
+
+Network modeling allows a broader view of the whole community. 
+
+NMDS uses the multivariate distance between observations. 
+
 %What do co-occurrences tell us?
+
+Networks and co-occurrence analyses focus on the patterns of the
+species with respect to each other.
+
 %Co-occurrence (overall)
 %Network (overall)
 %Network plot
@@ -95,23 +105,21 @@ com <- com.sim[[1]][[5]][[7]]
 geno <- factor(trees[,1])
                                         #composition
 adonis(com~geno)
-nms <- nmds(vegdist(com),2,2)
+nms <- nmds(vegdist(com),2,2,nits=3)
 my.nms <- nmds.min(nms)
 ch.plot(my.nms,g=geno,plot.legend=FALSE)
+top.ten <- com[,order(apply(com,2,sum),decreasing=TRUE)][,1:10]
+plot(envfit(my.nms,top.ten),add=TRUE,col='darkgrey')
+                                        #heritability
+getH2C(com,geno)
                                         #networks
-com.net <- com
-com.net[com<=10] <- 0
-net <- CoNetwork(com.net)
-mgp(net,com.net,displaylabels=TRUE)
-mgp(min.net(net,com.net)[[1]],min.net(net,com.net)[[2]],displaylabels=TRUE)
+net <- CoNetwork(com,threshold=20)
+mgp(net,com,displaylabels=TRUE)
+mgp(min.net(net,com)[[1]],min.net(net,com)[[2]],displaylabels=TRUE)
                                         #co-occurrence
-com.nul <- nullCom(com.net)
-cs.nul <- unlist(lapply(com.nul,cscore))
-cs.obs <- cscore(com.net)
-hist(cs.nul,xlim=c(5,29))
-abline(v=cs.obs,col=2,lwd=3,lty=2)
-p.val <- length(cs.nul[cs.nul<=cs.obs])/length(cs.nul)
-ses <- (cs.obs-mean(cs.nul))/sd(cs.nul)
+cnm.results <- cnm.test(com,nits=100,threshold=10)
+cnm.results
+
 
 @ 
 

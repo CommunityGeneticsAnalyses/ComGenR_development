@@ -1,0 +1,79 @@
+\documentclass[a4paper]{article} 
+
+\title{\textcolor{blue}{Populus Genetic Variation Networks}}  
+\author{Matthew K. Lau}
+
+%Sweave package
+%\usepackage{/Library/Frameworks/R.framework/Resources/share/texmf/Sweave}
+%\usepackage[utf8x]{inputenc} %this is to fix the quote corruption post sweaving
+
+%Miscellaneaous
+\usepackage[margin=2cm]{geometry}
+\usepackage{color}
+\usepackage{hyperref}
+\hypersetup{colorlinks=false}
+
+%packages for the flow diagram
+\usepackage{tikz}
+\usetikzlibrary{shapes,arrows}
+
+%Tikz styles
+% styles for flowcharts
+%\tikzstyle{decision} = [diamond, draw, fill=green!15,text width=4.5em, text badly centered, node distance=3cm, inner sep=0pt]
+\tikzstyle{block} = [rectangle, draw, fill=white!10, text width=5em, text centered, minimum height=4em]
+\tikzstyle{blockr} = [rectangle, draw, fill=white!10, text width=5em, text centered, minimum height=4em,rounded corners]
+%\tikzstyle{blockorange} = [rectangle, draw,fill=orange!15, text width=5em, text centered, rounded corners, minimum height=4em]
+
+%Graphics Location
+\graphicspath{{images/}}
+
+\begin{document}
+
+\maketitle
+
+\setcounter{tocdepth}{2}
+\tableofcontents
+
+\section{Project Concept}
+In order to understand the evolution of species it is important to understand the structure of genetic variation of the entire population. Primarily populations have been treated as well mixed spatially homogenous units with the intent of reducing the complexity of evolutionary models. Recent developments in the field of landscape genetics have shown that the spatial context of populations for many species can drastically improve our understanding of the evolutionary dynamics of these populations. The integration of evolutionary biology and network theory has yielded useful tools for approaching questions related to 1) the structure of spatial variation in populations and 2) the scale at which management efforts should focus. 
+
+Here we apply the network theoretic methods to:
+
+\begin{enumerate}
+\item Elucidate the structure of genetic variation in populations of \textit{Populus spp.}
+\item Search for evolutionarily relevant units
+\item Model the potential evolutionary dynamics of the species
+\end{enumerate}
+
+\section{Relict Data}
+
+\subsection{Metadata}
+
+\paragraph{Email from Scott Woolbright} Here are the relict SSR marker data.  First row is marker name.  Columns are sample ID and pop ID.  The first 102 are parental samples from across each range (Fremont, narrowleaf, and trichocarpa).  The rest are allele sizes.  Missing data is coded as -1.  Some populations have a lot of missing data (NPV and NGM in particular).  Not sure how you want to handle that.  Also, I've been looking at Eastern ranges vs. Central ranges.  Eastern ranges are all of those starting at row 103 and ending on row.  228-230 are from a southern range.  The rest are from the central part of the state.  Let me know if you need anything else.
+
+\paragraph{Original data file = RelictsforGenAlEx.xls}
+
+\subsection{Analysis Notes}
+
+\subsubsection{Outline of Network Construction Process}
+   \begin{description}
+   \item Calculate multi-locus genetic distances
+   \item Calculate genetic covariance matrix
+   \item Generate independence matrix
+   \end{description}
+
+\section{Research Notes and Avenues for Further Study}
+
+\subsection{2 Feb 2011}
+
+\begin{enumerate}
+\item WRITE-UP METHODS AND RESULTS FROM ANALYSES THUS FAR
+
+\item To deal with missing values, assign the most abundant allele at that locus with probability determined by the abundances of that allele in the population.
+
+\item Try doing an individual based network and then detect modules. 
+\end{enumerate}
+
+
+
+\end{document}

@@ -1,0 +1,483 @@
+%%%NOTE: for help with latex symbols look here http://mirror.unl.edu/ctan/info/symbols/comprehensive/symbols-a4.pdf.
+\documentclass[12pt]{article}
+\usepackage{color}
+\usepackage{cite}
+\usepackage{geometry}                % See geometry.pdf to learn the layout options. There are lots.
+%\usepackage{pdflscape}        %single page landscape
+                                %mode \begin{landscape} \end{landscape}
+\geometry{letterpaper}                   % ... or a4paper or a5paper or ... 
+%\usepackage[parfill]{parskip}    % Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{multicol} % \begin{multicols}{number of columns} \end{multicols}
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{Sweave}
+\newcommand{\etal}{\textit{et al.}}
+\usepackage{hyperref}  %\hyperref[label_name]{''link text''}
+                       %\hyperlink{label}{anchor caption}
+                       %\hypertarget{label}{link caption}
+\linespread{1.5}
+
+\title{ComGenR: Community Genetics Analyses in R}
+\author{M.K. Lau}
+%\date{}                                           % Activate to display a given date or no date
+
+\begin{document}
+\maketitle
+
+Community Genetics is a field of biology that works at the interface
+between ecological genetics and community ecology. Being inherently
+multi-disciplinary, the analytics involved have developed in separate
+fields. \textbf{ComGenR} is intended to synthesize these analytical
+techniques and facilitate new analytically and computationally driven
+research tools. Here, we present an introduction to the package,
+broken into five main sections:
+
+\setcounter{tocdepth}{3}  %%activate to number sections
+\tableofcontents  
+
+\section{Community Genetics Data}
+
+%Species abundances
+%Genetic information
+%Brief mention of other packages
+%Importing data
+
+\section{Community Composition}
+
+%Heatmap
+%NMDS - regular and cross-hair
+%NMDS - stress and variance explained
+%Overlaying genetic info
+%Overlaying environmental info
+%Vectors - species
+
+%PERMANOVA - BC-distance, Clarke adjustment and adonis
+%Mantel - warning about ecodist conflict
+%Pairwise PERMANOVA - p-value adjustments
+%Relativising - species max 
+
+%Species genotype means and se
+
+\section{Modeling and Quantifying Heritability}
+
+%cgSIM - genetic versus environmental variance
+%Isolating an NMDS axis - pros-cons and possible pitfalls
+%getH2C - balanced and unbalanced design auto-detect
+
+\section{Network Modeling and Co-occurrence Analyses}
+
+%What is a network?
+
+%Why do we care?
+
+Network modeling allows a broader view of the whole community. 
+
+NMDS uses the multivariate distance between observations. 
+
+%What do co-occurrences tell us?
+
+Networks and co-occurrence analyses focus on the patterns of the
+species with respect to each other.
+
+%Co-occurrence (overall)
+%Network (overall)
+%Network plot
+%Network statistics
+
+\section{A Template Analysis}
+
+%PERMANOVA - genotype
+%Paired PERMANOVA
+%NMDS - with overlays
+%Calculate heritability
+%Co-occurrence analysis (R1)
+%Network model (stand - all and condensed)
+%Tree level co-occurrence (genotype effect test)
+%Tree level network (average)
+
+\begin{Schunk}
+\begin{Sinput}
+> library(ComGenR)
+>                                         #model community data
+> trees <- gpmTrees()
+> com.sim <- cgSim(tree.pheno=trees,reps=1,YY=5,GG=7)
+\end{Sinput}
+\begin{Soutput}
+[1] "1 1 1"
+[1] "1 1 2"
+[1] "1 1 3"
+[1] "1 1 4"
+[1] "1 1 5"
+[1] "1 1 6"
+[1] "1 1 7"
+[1] "1 2 1"
+[1] "1 2 2"
+[1] "1 2 3"
+[1] "1 2 4"
+[1] "1 2 5"
+[1] "1 2 6"
+[1] "1 2 7"
+[1] "1 3 1"
+[1] "1 3 2"
+[1] "1 3 3"
+[1] "1 3 4"
+[1] "1 3 5"
+[1] "1 3 6"
+[1] "1 3 7"
+[1] "1 4 1"
+[1] "1 4 2"
+[1] "1 4 3"
+[1] "1 4 4"
+[1] "1 4 5"
+[1] "1 4 6"
+[1] "1 4 7"
+[1] "1 5 1"
+[1] "1 5 2"
+[1] "1 5 3"
+[1] "1 5 4"
+[1] "1 5 5"
+[1] "1 5 6"
+[1] "1 5 7"
+\end{Soutput}
+\begin{Sinput}
+> com <- com.sim[[1]][[5]][[7]]
+> geno <- factor(trees[,1])
+>                                         #composition
+> adonis(com~geno)
+\end{Sinput}
+\begin{Soutput}
+Call:
+adonis(formula = com ~ geno) 
+
+Terms added sequentially (first to last)
+
+          Df SumsOfSqs  MeanSqs F.Model      R2 Pr(>F)    
+geno       9   0.73105 0.081228  3.8485 0.46407  0.001 ***
+Residuals 40   0.84425 0.021106         0.53593           
+Total     49   1.57530                  1.00000           
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+\end{Soutput}
+\begin{Sinput}
+> nms <- nmds(vegdist(com),2,2,nits=3)
+\end{Sinput}
+\begin{Soutput}
+Using random start configuration 
+Using random start configuration 
+Using random start configuration 
+\end{Soutput}
+\begin{Sinput}
+> my.nms <- nmds.min(nms)
+\end{Sinput}
+\begin{Soutput}
+Minimum stress for given dimensionality:  0.1378171 
+r^2 for minimum stress configuration:  0.9538481 
+\end{Soutput}
+\begin{Sinput}
+> ch.plot(my.nms,g=geno,plot.legend=FALSE)
+\end{Sinput}
+\begin{Soutput}
+NULL
+\end{Soutput}
+\begin{Sinput}
+> top.ten <- com[,order(apply(com,2,sum),decreasing=TRUE)][,1:10]
+> plot(envfit(my.nms,top.ten),add=TRUE,col='darkgrey')
+>                                         #heritability
+> getH2C(com,geno)
+\end{Sinput}
+\begin{Soutput}
+       H2C         CI         SE 
+0.02259439 0.22018440 0.11233898 
+   lower.CI         H2C    upper.CI 
+-0.19759001  0.02259439  0.24277879 
+\end{Soutput}
+\begin{Sinput}
+>                                         #networks
+> net <- CoNetwork(com,threshold=20)
+> mgp(net,com,displaylabels=TRUE)
+\end{Sinput}
+\begin{Soutput}
+               x         y
+ [1,] -1.1224362 10.548288
+ [2,] 11.2550959 16.698263
+ [3,]  8.1745656 10.127402
+ [4,] 12.0600110 11.741093
+ [5,]  0.5096159 13.370786
+ [6,]  5.2798888 13.995360
+ [7,] 15.2120338 19.736553
+ [8,] -1.3607652 16.842613
+ [9,]  8.5106199  5.160652
+[10,] -2.5248068 19.474665
+[11,]  6.2075496 25.808456
+[12,] -0.2980176 21.523588
+[13,]  3.3654148 20.422155
+[14,] -3.1197600 14.422125
+[15,] 10.5325484 24.652461
+[16,] 16.3894701 16.667553
+[17,] 15.3432342 13.998593
+[18,]  0.7509284  6.321131
+[19,]  1.1163790 24.289929
+[20,]  4.8370593  7.483090
+[21,]  7.8673828 23.205965
+[22,] 14.1453099 22.983747
+[23,] 11.9255724  7.811251
+[24,] 14.8337268 10.458267
+[25,]  8.9018029 26.890592
+\end{Soutput}
+\begin{Sinput}
+> mgp(min.net(net,com)[[1]],min.net(net,com)[[2]],displaylabels=TRUE)
+\end{Sinput}
+\begin{Soutput}
+            x        y
+[1,] 10.35300 6.539075
+[2,] 13.91408 3.205946
+[3,] 12.51093 4.139920
+[4,] 13.50863 5.860771
+[5,] 10.16348 3.861051
+[6,] 14.85435 4.852819
+\end{Soutput}
+\begin{Sinput}
+>                                         #co-occurrence
+> cnm.results <- cnm.test(com,nits=100,threshold=10)
+\end{Sinput}
+\begin{Soutput}
+  |                                                        
+  |                                                  |   0%
+  |                                                        
+  |                                                  |   1%
+  |                                                        
+  |+                                                 |   2%
+  |                                                        
+  |++                                                |   3%
+  |                                                        
+  |++                                                |   4%
+  |                                                        
+  |++                                                |   5%
+  |                                                        
+  |+++                                               |   6%
+  |                                                        
+  |++++                                              |   7%
+  |                                                        
+  |++++                                              |   8%
+  |                                                        
+  |++++                                              |   9%
+  |                                                        
+  |+++++                                             |  10%
+  |                                                        
+  |++++++                                            |  11%
+  |                                                        
+  |++++++                                            |  12%
+  |                                                        
+  |++++++                                            |  13%
+  |                                                        
+  |+++++++                                           |  14%
+  |                                                        
+  |++++++++                                          |  15%
+  |                                                        
+  |++++++++                                          |  16%
+  |                                                        
+  |++++++++                                          |  17%
+  |                                                        
+  |+++++++++                                         |  18%
+  |                                                        
+  |++++++++++                                        |  19%
+  |                                                        
+  |++++++++++                                        |  20%
+  |                                                        
+  |++++++++++                                        |  21%
+  |                                                        
+  |+++++++++++                                       |  22%
+  |                                                        
+  |++++++++++++                                      |  23%
+  |                                                        
+  |++++++++++++                                      |  24%
+  |                                                        
+  |++++++++++++                                      |  25%
+  |                                                        
+  |+++++++++++++                                     |  26%
+  |                                                        
+  |++++++++++++++                                    |  27%
+  |                                                        
+  |++++++++++++++                                    |  28%
+  |                                                        
+  |++++++++++++++                                    |  29%
+  |                                                        
+  |+++++++++++++++                                   |  30%
+  |                                                        
+  |++++++++++++++++                                  |  31%
+  |                                                        
+  |++++++++++++++++                                  |  32%
+  |                                                        
+  |++++++++++++++++                                  |  33%
+  |                                                        
+  |+++++++++++++++++                                 |  34%
+  |                                                        
+  |++++++++++++++++++                                |  35%
+  |                                                        
+  |++++++++++++++++++                                |  36%
+  |                                                        
+  |++++++++++++++++++                                |  37%
+  |                                                        
+  |+++++++++++++++++++                               |  38%
+  |                                                        
+  |++++++++++++++++++++                              |  39%
+  |                                                        
+  |++++++++++++++++++++                              |  40%
+  |                                                        
+  |++++++++++++++++++++                              |  41%
+  |                                                        
+  |+++++++++++++++++++++                             |  42%
+  |                                                        
+  |++++++++++++++++++++++                            |  43%
+  |                                                        
+  |++++++++++++++++++++++                            |  44%
+  |                                                        
+  |++++++++++++++++++++++                            |  45%
+  |                                                        
+  |+++++++++++++++++++++++                           |  46%
+  |                                                        
+  |++++++++++++++++++++++++                          |  47%
+  |                                                        
+  |++++++++++++++++++++++++                          |  48%
+  |                                                        
+  |++++++++++++++++++++++++                          |  49%
+  |                                                        
+  |+++++++++++++++++++++++++                         |  50%
+  |                                                        
+  |++++++++++++++++++++++++++                        |  51%
+  |                                                        
+  |++++++++++++++++++++++++++                        |  52%
+  |                                                        
+  |++++++++++++++++++++++++++                        |  53%
+  |                                                        
+  |+++++++++++++++++++++++++++                       |  54%
+  |                                                        
+  |++++++++++++++++++++++++++++                      |  55%
+  |                                                        
+  |++++++++++++++++++++++++++++                      |  56%
+  |                                                        
+  |++++++++++++++++++++++++++++                      |  57%
+  |                                                        
+  |+++++++++++++++++++++++++++++                     |  58%
+  |                                                        
+  |++++++++++++++++++++++++++++++                    |  59%
+  |                                                        
+  |++++++++++++++++++++++++++++++                    |  60%
+  |                                                        
+  |++++++++++++++++++++++++++++++                    |  61%
+  |                                                        
+  |+++++++++++++++++++++++++++++++                   |  62%
+  |                                                        
+  |++++++++++++++++++++++++++++++++                  |  63%
+  |                                                        
+  |++++++++++++++++++++++++++++++++                  |  64%
+  |                                                        
+  |++++++++++++++++++++++++++++++++                  |  65%
+  |                                                        
+  |+++++++++++++++++++++++++++++++++                 |  66%
+  |                                                        
+  |++++++++++++++++++++++++++++++++++                |  67%
+  |                                                        
+  |++++++++++++++++++++++++++++++++++                |  68%
+  |                                                        
+  |++++++++++++++++++++++++++++++++++                |  69%
+  |                                                        
+  |+++++++++++++++++++++++++++++++++++               |  70%
+  |                                                        
+  |++++++++++++++++++++++++++++++++++++              |  71%
+  |                                                        
+  |++++++++++++++++++++++++++++++++++++              |  72%
+  |                                                        
+  |++++++++++++++++++++++++++++++++++++              |  73%
+  |                                                        
+  |+++++++++++++++++++++++++++++++++++++             |  74%
+  |                                                        
+  |++++++++++++++++++++++++++++++++++++++            |  75%
+  |                                                        
+  |++++++++++++++++++++++++++++++++++++++            |  76%
+  |                                                        
+  |++++++++++++++++++++++++++++++++++++++            |  77%
+  |                                                        
+  |+++++++++++++++++++++++++++++++++++++++           |  78%
+  |                                                        
+  |++++++++++++++++++++++++++++++++++++++++          |  79%
+  |                                                        
+  |++++++++++++++++++++++++++++++++++++++++          |  80%
+  |                                                        
+  |++++++++++++++++++++++++++++++++++++++++          |  81%
+  |                                                        
+  |+++++++++++++++++++++++++++++++++++++++++         |  82%
+  |                                                        
+  |++++++++++++++++++++++++++++++++++++++++++        |  83%
+  |                                                        
+  |++++++++++++++++++++++++++++++++++++++++++        |  84%
+  |                                                        
+  |++++++++++++++++++++++++++++++++++++++++++        |  85%
+  |                                                        
+  |+++++++++++++++++++++++++++++++++++++++++++       |  86%
+  |                                                        
+  |++++++++++++++++++++++++++++++++++++++++++++      |  87%
+  |                                                        
+  |++++++++++++++++++++++++++++++++++++++++++++      |  88%
+  |                                                        
+  |++++++++++++++++++++++++++++++++++++++++++++      |  89%
+  |                                                        
+  |+++++++++++++++++++++++++++++++++++++++++++++     |  90%
+  |                                                        
+  |++++++++++++++++++++++++++++++++++++++++++++++    |  91%
+  |                                                        
+  |++++++++++++++++++++++++++++++++++++++++++++++    |  92%
+  |                                                        
+  |++++++++++++++++++++++++++++++++++++++++++++++    |  93%
+  |                                                        
+  |+++++++++++++++++++++++++++++++++++++++++++++++   |  94%
+  |                                                        
+  |++++++++++++++++++++++++++++++++++++++++++++++++  |  95%
+  |                                                        
+  |++++++++++++++++++++++++++++++++++++++++++++++++  |  96%
+  |                                                        
+  |++++++++++++++++++++++++++++++++++++++++++++++++  |  97%
+  |                                                        
+  |+++++++++++++++++++++++++++++++++++++++++++++++++ |  98%
+  |                                                        
+  |++++++++++++++++++++++++++++++++++++++++++++++++++|  99%
+  |                                                        
+  |++++++++++++++++++++++++++++++++++++++++++++++++++| 100%
+\end{Soutput}
+\begin{Sinput}
+> cnm.results
+\end{Sinput}
+\begin{Soutput}
+      SES   lower.p   upper.p 
+-30.03817   0.00000   1.00000 
+\end{Soutput}
+\begin{Sinput}
+> 
+\end{Sinput}
+\end{Schunk}
+
+%% %%Figure construction
+%% <<echo=false,results=hide,label=fig1,include=false>>=
+%% @ 
+
+%% %%Figure plotting
+%% \begin{figure} 
+%% \begin{center} 
+%% <<label=fig1,fig=TRUE,echo=false>>=
+%% <<fig1>> 
+%% @ 
+%% \end{center} 
+%% \caption{}
+%% \label{fig:one}
+%% \end{figure}
+
+
+%% %%Activate for bibtex vibliography
+%% \cite{goossens93}
+%% \bibliographystyle{plain}
+%% \bibliography{/Users/Aeolus/Documents/bibtex/biblib}
+
+
+\end{document}  
+
+
