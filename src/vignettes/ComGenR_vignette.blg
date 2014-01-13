@@ -1,48 +1,46 @@
 This is BibTeX, Version 0.99d (TeX Live 2011)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: ComGenR_vignette.aux
-I found no \citation commands---while reading file ComGenR_vignette.aux
-I found no \bibdata command---while reading file ComGenR_vignette.aux
-I found no \bibstyle command---while reading file ComGenR_vignette.aux
-You've used 0 entries,
-            0 wiz_defined-function locations,
-            83 strings with 506 characters,
-and the built_in function-call counts, 0 in all, are:
-= -- 0
-> -- 0
+The style file: unsrt.bst
+Database file #1: ComGenR_vignette.bib.bib
+You've used 12 entries,
+            1791 wiz_defined-function locations,
+            523 strings with 6030 characters,
+and the built_in function-call counts, 3286 in all, are:
+= -- 261
+> -- 216
 < -- 0
-+ -- 0
-- -- 0
-* -- 0
-:= -- 0
-add.period$ -- 0
-call.type$ -- 0
-change.case$ -- 0
++ -- 77
+- -- 65
+* -- 274
+:= -- 568
+add.period$ -- 36
+call.type$ -- 12
+change.case$ -- 11
 chr.to.int$ -- 0
-cite$ -- 0
-duplicate$ -- 0
-empty$ -- 0
-format.name$ -- 0
-if$ -- 0
+cite$ -- 12
+duplicate$ -- 109
+empty$ -- 280
+format.name$ -- 65
+if$ -- 692
 int.to.chr$ -- 0
-int.to.str$ -- 0
-missing$ -- 0
-newline$ -- 0
-num.names$ -- 0
-pop$ -- 0
-preamble$ -- 0
+int.to.str$ -- 12
+missing$ -- 13
+newline$ -- 63
+num.names$ -- 12
+pop$ -- 17
+preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 0
+skip$ -- 35
 stack$ -- 0
-substring$ -- 0
-swap$ -- 0
+substring$ -- 268
+swap$ -- 12
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 0
-width$ -- 0
-write$ -- 0
-(There were 3 error messages)
+while$ -- 27
+width$ -- 14
+write$ -- 134

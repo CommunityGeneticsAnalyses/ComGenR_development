@@ -1,0 +1,1737 @@
+This bib library was compiled by Matthew K. Lau (mkl48{at}nau.edu).                  
+
+@article{emptyarticle,
+    author  = "",
+    title   = "",
+    year    = "",
+    journal = "",
+    volume  = "",
+    number  = "",
+    pages   = ""
+}
+                  
+@book{emptybook,
+    author    = "",
+    title     = "",
+    year      = "",
+    publisher = "",
+    address   = ""
+}
+                  
+@InCollection{jdoe05,
+author     =  {John Doe},
+title      =  {Dynamic Ambient Paradigms},
+booktitle  =  {Paradigm Gems 2},
+pages      = {223--233},
+publisher  = {Addison Wesley},
+year       = 2005,
+editor     = {Averell Doe}
+}
+
+@article{brost2012,
+    author  = "B.M. Brost and P. Beier",
+    title   = "Land facets to design linkages for climate change",
+    year    = "2012",
+    journal = "Ecological Applications",
+    volume  = "22",
+    number  = "",
+    pages   = "87--103"
+}
+            
+                  
+                  
+@article{ohtsuki2006,
+    author  = "H. Ohtsuki and C. Hauert and E. Lieberman and M.A. Nowak",
+    title   = "A simple rule for the evolution of cooperation on graphs and social networks",
+    year    = "2006",
+    journal = "Nature",
+    volume  = "44",
+    number  = "",
+    pages   = "502-505"
+}
+
+                  
+@article{wimp2004,
+    author  = "G.M. Wimp and W.P. Young and S.A. Woolbright and G.D. Martinsen and P. Keim and T.G. Whitham",
+    title   = "Conserving plant genetic diversity for dependent animal communities",
+    year    = "2004",
+    journal = "Ecology Letters",
+    volume  = "7",
+    number  = "",
+    pages   = "776-780"
+}
+                  
+@article{johnson2005,
+    author  = "M.T.J. Johnson and A.A. Agrawal",
+    title   = "Plant genotype and environment interact to shape a diverse arthropod community on evening primrose (Oenothera biennis)",
+    year    = "2005",
+    journal = "Ecology",
+    volume  = "86",
+    number  = "",
+    pages   = "874-885"
+}
+                  
+@article{crutsinger2006,
+    author  = "G.M. Crutsinger and M.D. Collins and J.A. Fordyce and Z. Gompert and C.C. Nice and N.J. Sanders",
+    title   = "Plant genotypic diversity predicts community structure and governs an ecosystem process",
+    year    = "2006",
+    journal = "Science",
+    volume  = "313",
+    number  = "",
+    pages   = "966-968"
+}
+
+@article{strauss2005,
+    author  = "S.Y. Strauss and H. Sahli and J.K. Connor",
+    title   = "Toward a more trait-centered approach to diffuse (co)evolution",
+    year    = "2005",
+    journal = "New Phytologist",
+    volume  = "165",
+    number  = "",
+    pages   = "81-90"
+}
+
+                  
+@article{thebault2010,
+    author  = "E. Thebault and C. Fontaine",
+    title   = "Stability of ecological communities and the architecture of mutualistic and trophic networks",
+    year    = "2010",
+    journal = "Science",
+    volume  = "329",
+    number  = "",
+    pages   = "853-856"
+}
+
+                  
+@article{bascompte2003,
+    author  = "J. Bascompte and P. Jordano and C.J. Melian and J.M. Olesen",
+    title   = "The nested assembly of plant-animal mutualistic networks",
+    year    = "2003",
+    journal = "PNAS",
+    volume  = "100",
+    number  = "",
+    pages   = "9383-9387"
+}
+                  
+@article{cohen1979,
+    author  = "J.E. Cohen",
+    title   = "Graph theoretic models of food webs",
+    year    = "1979",
+    journal = "Rocky Mountain Journal of Mathematics",
+    volume  = "9",
+    number  = "",
+    pages   = "29-30"
+}
+ 
+@article{macarthur1955,
+    author  = "R. MacArthur",
+    title   = "Fluctuations of animal populations and a measure of community stability",
+    year    = "1955",
+    journal = "Ecology",
+    volume  = "36",
+    number  = "",
+    pages   = "533-536"
+}
+                 
+@article{may1972,
+    author  = "R.M. May",
+    title   = "Will a large complex system be stable?",
+    year    = "1972",
+    journal = "Nature",
+    volume  = "238",
+    number  = "",
+    pages   = "413-414"
+}
+
+@article{ehrlich1964,
+    author  = "P.R. Ehrlich and P.H. Raven",
+    title   = "Butterflies and plants: A study of coevolution",
+    year    = "1964",
+    journal = "Evolution",
+    volume  = "18",
+    number  = "",
+    pages   = "586-608"
+}
+
+@article{brooks1979,
+    author  = "D.R. Brooks",
+    title   = "Testing the context and extent of host-parasite Coevolution",
+    year    = "1979",
+    journal = "Systems Biology",
+    volume  = "28",
+    number  = "",
+    pages   = "299-307"
+}
+                 
+@article{levin1977,
+    author  = "S.A. Levin and J.D. Udovic",
+    title   = "A mathematical model of coevolving populations",
+    year    = "1977",
+    journal = "American Naturalist",
+    volume  = "111",
+    number  = "",
+    pages   = "657-675"
+}
+                  
+@article{fritz1988,
+    author  = "R.S. Fritz and P.W. Price",
+    title   = "Genetic variation among plants and insect community structure: Willows and Sawflies",
+    year    = "1988",
+    journal = "Ecology",
+    volume  = "69",
+    number  = "",
+    pages   = "845-856"
+}
+                  
+@article{thompson1999,
+    author  = "John N. Thompson",
+    title   = "The evolution of species interactions",
+    year    = "1999",
+    journal = "Science",
+    volume  = "284",
+    number  = "",
+    pages   = "2116-2118"
+}
+                  
+@book{antonovics1992,
+    author    = "Janis Antonivics",
+    title     = "Toward Community Genetics in Plant Resistance to Herbivores",
+    year      = "1992",
+    publisher = "University of Chicago",
+    address   = "Chicago, IL"
+}
+
+@Manual{enaR,
+    title = {enaR: Tools ecological network analysis (ena)},
+    author = {M.K. Lau and S.R. Borrett and D.E. Hines},
+    year = {2012},
+    note = {R package version 1.01},
+    url = {http://CRAN.R-project.org/package=enaR},
+  }
+
+                  
+@article{poisot2012,
+    author  = "Timoth\'ee Poisot and Elsa Canard and David Mouillot and Nicholas Mouquet and Dominique Gravel",
+    title   = "The dissimilarity of species interaction networks",
+    year    = "2012",
+    journal = "Ecology Letters",
+    volume  = "15",
+    number  = "",
+    pages   = "1353-1361"
+}
+
+@article{allesina2012,
+    author  = "Stefano Allesina and Si Tang",
+    title   = "Stability criteria for complex ecosystems",
+    year    = "2012",
+    journal = "Nature",
+    volume  = "483",
+    number  = "",
+    pages   = "205-208"
+}
+                  
+@article{walsh2009,
+    author  = "Bruce Walsh and Mark W. Blows",
+    title   = "Abundant Genetic Variation + Strong Selection = Multivariate Genetic Constraints: A Genomic View of Adaptation",
+    year    = "2009",
+    journal = "Annual Review of Ecology and Evolutionary Systematics",
+    volume  = "40",
+    number  = "",
+    pages   = "41-59"
+}
+
+
+                  
+@article{vavrek2011,
+    title = {fossil: palaeoecological and palaeogeographical analysis tools},
+    author = {Matthew J. Vavrek},
+    year = {2011},
+    journal = {Palaeontologia Electronica},
+    volume = {14},
+    pages = {1T},
+    number = {1},
+    note = {R package version 0.3.0},
+  }
+                  
+@article{street2011,
+    author  = "N. Street and S. Jansson and T.R. Hvidsten",
+    title   = "A systems biology model of the regulatory network in Populus leaves reveals interacting regulators and conserved regulation",
+    year    = "2011",
+    journal = "BMC Plant Biology",
+    volume  = "11",
+    number  = "13",
+    pages   = "1-15"
+}
+                  
+@Manual{sna,
+    title = {sna: Tools for Social Network Analysis},
+    author = {Carter T. Butts},
+    year = {2010},
+    note = {R package version 2.2-0},
+    url = {http://CRAN.R-project.org/package=sna},
+  }
+                  
+@Manual{vegan,
+    title = {vegan: Community Ecology Package},
+    author = {Jari Oksanen and F. Guillaume Blanchet and Roeland Kindt and Pierre Legendre and Peter R. Minchin and R. B. O'Hara and Gavin L. Simpson and Peter Solymos and M. Henry H. Stevens and Helene Wagner},
+    year = {2012},
+    note = {R package version 2.0-3},
+    url = {http://CRAN.R-project.org/package=vegan},
+  }
+
+@book{mccarthy2007,
+    author    = "M.A. McCarthy",
+    title     = "Bayesian Methods for Ecology",
+    year      = "2007",
+    publisher = "Cambridge University Press",
+    address   = "Cambridge, U.K."
+}
+
+@article{fortuna2010,
+    author  = "M.A. Fortuna and D.B. Stouffer and J.M. Olesen and P. Jordano and D. Mouillot and B.R. Krasnov and R. Poulin and J. Bascompte",
+    title   = "Nestedness versus modularity in ecological networks: two sides of the same coin?",
+    year    = "2010",
+    journal = "Journal of Animal Ecology",
+    volume  = "79",
+    number  = "",
+    pages   = "811-817"
+}
+                  
+@article{wimp2007,
+    author  = "G.M. Wimp and S. Wooley and R.K. Bangert and W.P. Young and G.D. Martinsen and P. Keim and R.L. Lindroth and T.G. Whitham",
+    title   = "Plant genetics predicts intra-annual variation in phytochemistry and arthropod community structure",
+    year    = "2007",
+    journal = "Molecular Ecology",
+    volume  = "16",
+    number  = "",
+    pages   = "5057-5069"
+}
+                  
+@article{keith2010,
+    author  = "A.R. Keith and J.K. Bailey and T.G. Whitham",
+    title   = "A genetic basis to community repeatability and stability",
+    year    = "2010",
+    journal = "Ecology",
+    volume  = "91",
+    number  = "",
+    pages   = "3398-3406"
+}
+                  
+                  
+@article{naesborgunpub,
+    author  = "R.R. Naesborg",
+    title   = "Unpublished data",
+    year    = "Unpublished",
+    journal = "",
+    volume  = "",
+    number  = "",
+    pages   = ""
+}
+
+
+@article{lamit2011,
+    author  = "L.J. Lamit and M.A. Bowker and L.M. Holeski and R.R. Naesborg and S.C. Wooley and M. Zinkgraf and R.L. Lindroth and T.G. Whitham and C.A. Gehring",
+    title   = "Genetically-based trait variation within a foundation tree species influences a dominant bark lichen",
+    year    = "2011",
+    journal = "Fungal Ecology",
+    volume  = "4",
+    number  = "",
+    pages   = "103-106"
+}
+
+@book{diamond1975,
+    author    = "J.M. Diamond",
+    title     = "Assembly of species communities",
+    year      = "1975",
+    publisher = "Belknap Press",
+    address   = "Cambridge, MA."
+}
+ 
+@article{gotelli2000,
+    author  = "N.J. Gotelli",
+    title   = "Null model analysis of species co-occurrence patterns",
+    year    = "2000",
+    journal = "Ecology",
+    volume  = "81",
+    number  = "",
+    pages   = "2606-2621"
+}
+                  
+@article{shuster2006,
+    author  = "S.M. Shuster and E.V. Lonsdorf and G.M. Wimp and J.K. Bailey and T.G. Whitham",
+    title   = "Community heritability measures the evolutionary consequences of indirect genetics effects on community structure",
+    year    = "2006",
+    journal = "Evolution",
+    volume  = "60",
+    number  = "",
+    pages   = "991-1003"
+}
+
+
+@article{smith2011,
+    author  = "D.S. Smith and J.K. Bailey and S.M. Shuster and T.G. Whitham",
+    title   = "A geographic mosaic of trophic interactions and selection: trees, aphids and birds",
+    year    = "2011",
+    journal = "Journal of Evolutionary Biology",
+    volume  = "24",
+    number  = "",
+    pages   = "422-429"
+}
+                 
+@article{bailey2006,
+    author  = "J.K. Bailey and S.C. Wooley and R.L. Lindroth and T.G. Whitham",
+    title   = "Importance of species interactions to community heritability: a genetic basis to trophic-level interactions",
+    year    = "2006",
+    journal = "Ecology Letters",
+    volume  = "9",
+    number  = "",
+    pages   = "78-85"
+}
+                  
+@book{deangelis1992,
+    author  = "D. DeAngelis and L.J. Gross",
+    title   = "Individual-based models and approaches in ecology:populations, communities and ecosystems",
+    year    = "1992",
+    publisher = "Springer",
+    address   = "New York, U.S.A."
+}
+                  
+@book{pascual2005,
+    author  = "M. Pascual and J. Dunne",
+    title   = "Ecological Networks: Linking Structure to Dynamics in Food Webs",
+    year    = "2005",
+    publisher = "SFI and Oxford University Press",
+    address   = "Oxford, U.K."
+}
+                  
+@book{salasinprep,
+    author  = "A.K. Salas and S.R. Borrett",
+    title   = "Do nested, asymmetric network characteristics make mutualistic communities more evolutionarily stable?",
+    year    = "In Prep",
+}
+                  
+@book{lonsdorfinprep,
+    author  = "E.V. Lonsdorf and S.M. Shuster and M.K. Lau and T.G. Whitham",
+    title   = "How tangled is the bank? Effective community diversity and ecologically-dependent opportunity for selection",
+    year    = "In Prep",
+}
+                  
+@article{lau2010,
+    author  = "MK Lau and TG Whitham and LJ Lamit and NC Johnson",
+    title   = "Ecological and evolutionary interaction network exploration: addressing complexity of biological interactions in natural systems with community genetics and statistics",
+    year    = "2010",
+    journal = "JIFS",
+    volume  = "7",
+    number  = "",
+    pages   = "17-25"
+}
+
+                  
+@article{araujo2011,
+    author  = "M.B. Ara\'ujo and A. Rozenfeld and C. Rahbek and P.A. Marquet",
+    title   = "Using species co-occurrence networks to assess the impacts of climate change",
+    year    = "2011",
+    journal = "Ecography",
+    volume  = "34",
+    number  = "",
+    pages   = "897-908"
+}
+                  
+@article{memmott2007,
+    author  = "J Memmott and PG Craze and NM Waser and MV Price",
+    title   = "Global warming and the disruption of plant-pollinator interactions",
+    year    = "2007",
+    journal = "Ecology Letters",
+    volume  = "10",
+    number  = "8",
+    pages   = "1-8"
+}
+
+                  
+@article{danieli_silva2012,
+    author  = "Aline Danieli-Silva and Jana Magaly Tesserolli de Souza and Ana Julia Donatti and Ricardo Pamplona Campos and Jose Vicent\'{e}-Silva and Leandro Freitas and Isabela Galarda Varassin",
+    title   = "Do pollinatino syndromes cause modularity and predict interactions in a pollination network in tropical high-altitude grasslands?",
+    year    = "2012",
+    journal = "Oikos",
+    volume  = "121",
+    number  = "",
+    pages   = "35--43"
+}
+                  
+- pollination syndromes are pair-wise specializations, but generalization has been shown to be more common
+- evaluated the departure of the observed interaction network structure from that expected by syndromes, modular structure, module relation to syndromes and the robustness of syndromes
+- Findings:
+- syndromes predicted 69% of the interactions
+- Greater modularity than expected by chance
+- modules were associated with pollination syndromes
+- plant phylogeny did not account for significant amount of variation in interactions
+- phylogenetic signal only significant when flies were removed, probably because fly interactions are extremely labile
+- Concluded: 
+- Support the concept of pollination syndromes
+- Accuracy of pollination syndromes was predicted by ornithophily and melittophily
+                  
+@article{butterfield2010,
+    author  = "Bradley J. Butterfield and Julio L. Betancourt and Raymond M. Turner and John M. Briggs",
+    title   = "Facilitation drives 65 years of vegetation change in the Sonoran Desert",
+    year    = "2010",
+    journal = "Ecology",
+    volume  = "91",
+    number  = "4",
+    pages   = "1132--1139"
+}
+                                    
+- in low productivity ecosystems, abiotic factors have been thought to drive ecological processes
+- precip had a stronger effect under canopies than in open due to lowered evapotranspiration
+- density and precipitation indirectly affect perenniel canopy cover
+- mortality driven by competition, but not by precipitation
+- model explained substantial variation
+- simulation model showed positive feedback of density on cover produces unique temporal abudance patterns through buggering changes in abudnaces and decoupling community abundance from precipitation patterns at high abundances
+
+
+@article{Urban2011,
+    author  = "Mark C. Urban",
+    title   = "The evolution of species interactions across natural landscapes",
+    year    = "2011",
+    journal = "Ecology Letters",
+    volume  = "14",
+    number  = "",
+    pages   = "723--732"
+}
+                  
+- Compiled studies (75) to estimate the relative contribution of biotic selection, gene flow and spatially autocorrelated biotic selection to divergence in traits involved in species interactions
+- Biotic selection explained 16% of the variance in trait means for biotic interactions
+- Most biotic selection was spatially auto-correlated, thus local adaptation can be operative even under moderate levels of gene flow
+                  
+@article{strauss2002,
+    author  = "Sharon Y. Strauss and Jeniffer A. Rudgers and Jennifer A. Lau and Rebecca E. Irwin",
+    title   = "Direct and ecological costs of resistance to herbivory",
+    year    = "2002",
+    journal = "Trends in Ecology and Evolution",
+    volume  = "17",
+    number  = "6",
+    pages   = "278--285"
+}
+                  
+- Reviews examples of costs of herbivore resitance
+- Briefly mentions "third-party" costs, such as the attraction of herbivore enemies
+                  
+@article{thorpe2011,
+    author  = "Andrea S. Thorpe and Erik T. Aschehoug and Daniel Z. Atwater and Ragan M. Callaway",
+    title   = "Interactions among plants and evolution",
+    year    = "2011",
+    journal = "Journal of Ecology",
+    volume  = "99",
+    number  = "",
+    pages   = "729--740"
+}
+                  
+- Goals: generate ideas of how intra-trophic (plant) interactions may affect evolution and how evolution may affect plant interactions
+- niche partitioning evolobing through competitive interactions, facilitative interactions 
+- link to diversity and ecosystem function as well as trait-based community organization
+- history of coexistence might affect competitive outcomes (e.g. invasions)
+- place into the context of the geographic mosaic of coevolution
+- Lines of Inquiry
+- 1) 
+- evolutionary consequences contribute to communities as more than assemblages of independent species
+                  
+@article{ovaskainan2010,
+    author  = "Otso Ovaskainan, Jenni Hottola and Janne Soininen",
+    title   = "Modeling species co-occurrence by multivariate logistic regression generates new hypotheses on fungal interactions",
+    year    = "2010",
+    journal = "Ecology",
+    volume  = "91",
+    number  = "9",
+    pages   = "2514-2521"
+}
+                  
+- Generated fungal co-occcurrence models using multivariate logistic regression with Bayesian hierarchical statistical methods
+- Showed that including habitat veriables altered the magnitude and sign as well as the overall abundance of interactions, although there was very high correlation between the two models (without and with habitat variables)
+- Found more + than - co-occurrences, possibly due to negative interactions being seen as positive interactions
+
+@article{Milns2010,
+    author  = "Isobel Milns and Colin M. Beale and V. Anne Smith",
+    title   = "Revealing ecological networks using Bayesian network inference algorithms",
+    year    = "2010",
+    journal = "Ecology",
+    volume  = "91",
+    number  = "7",
+    pages   = "1892--1899"
+}
+                  
+- Compare Bayesian network modeling to ecological networks of birds
+- Used both environmental and species abundance data
+- Useful for modeling real networks and for illucidating new interactions
+- Need to incorporate spaital autocorrelation into models
+- Question: does this or the methods in the faisal paper take into account shared absences?
+
+@article{faisal2010,
+    author  = "Ali Faisal and Frank Dondelinger and Drik Husmeier and Colin M. Beale",
+    title   = "Inferring species interaction networks from species abundance data: A comparative evaluation of various statistical and machine learning methods",
+    year    = "2010",
+    journal = "Ecological Informatics",
+    volume  = "5",
+    number  = "",
+    pages   = "451--464"
+}
+                  
+- Compare methods for resolving interaction networks from species abundance data. 
+- Found that Bayesian networks performed best, although simpler partial correlation based methods performed well too
+- Spatial autocorrelation was important for more acurate modeling
+
+                  
+@article{wade2007,
+    author  = "M. J. Wade",
+    title   = "The co-evolutionary genetics of ecological communities",
+    year    = "2007",
+    journal = "Nature Reviews Genetics",
+    volume  = "8",
+    number  = "",
+    pages   = "185--195"
+}
+                  
+- Detection, investigation and understanding of the genetic bases of the co-adaptive process and co-speciation
+- 1. Patterns of co-adaptation and co-speciation to illustrate the consequences of co-evolution for populations and communities
+- 2. Concepts of evolutionary genetic theory (e.g. GxE and GxG), population genetic subdivision and genetic variation in the effect of one species on another in co-evolution
+- 3. Co-dispersal and co-transmission allows ntergenomic epistasis -- genes of one species interact with specific genes of another species -- to respond to selection
+-- Co-inheritance of trans-specific gene combinations
+- 4. Why community genetics (an integration of genetics and community ecology)?
+
+                  
+@article{butts2009,
+    author  = "C.T. Butts",
+    title   = "Revisiting the foundations of network analysis",
+    year    = "2009",
+    journal = "Science",
+    volume  = "325",
+    number  = "",
+    pages   = "414--416"
+}
+                  
+- Appropriate use of network analysis depends on choosing the right network representation for the problem at hand
+- Standard framework
+-- Very restrictive. We must ba able to reduce the system to a set of discrete components whose interactions are strictly dyadic in nature.
+-- This reduced structure has facilitated the mathematical and associated scientific applications
+-- What factors should be considered when choosing a network representation?
+--- 1. When is a node a node?
+---- Defining a node needs to be determined by the question of interest and the scale at which that question is relevant
+---- Also, determining groups of nodes to aggregate is another possible dimension of this question
+--- 2. When is an edge an edge?
+---- Direction, weight, variatbility
+---- Can a relationship be adequately approximated by a constant function?
+---- "More studies that assess the effectiveness of such approximations - and provide concrete, empirically validated guidelines for practice within particular problem domains- would be a welcome addtion to the literature."
+--- 3. Time Scales and Network Processes
+---- E.g. studies of diffusion dynamics suggest that partnership concurrency is an important predictor of epidemic potential
+---- '...edge dynamics (poential and actual data transfers) can be understood only by taking into account the dynamic nature of the set of nodes."
+
+
+
+@article{newman2003,
+    author  = "M.E.J. Newman",
+    title   = "The structure and function of complex networks",
+    year    = "2003",
+    journal = "SFI",
+    volume  = "",
+    number  = "",
+    pages   = "1--58"
+}
+                  
+- This is an internal document from SFI by Mark Newman, which looks to be the precursor to his networks textbook.
+- Intro: 
+-- Originated from Euler's solution of the Konigsberg bridge problem, formailzing as a graph.
+-- Questions about single nodes are not relevant in large graphs (hundreds of nodes)
+-- "The human eye is an analytic tool of remarkable power, and eyeballing pictures of networks is an excellent 
+way to gain an understanding of their structure." 
+-- Large graphs for which eyeballing fails must be investigated statistically
+-- Goals: 
+--- 1) find statstical properties (e.g. path lengths and degree distributions) that characterize the structure and behavior of networked systems
+--- 2) create models of networks that can help illucidate the meaning of these properties
+--- 3) predict behavior via structural properties and the local rules that govern vertices
+-- "Studes of the effects of structure on system behavior on the other hand are still in their infancy."
+- Types of Networks
+-- digraphs = directed graphs
+-- hyperedges = edges taht join more than two vertices
+-- n-partite graphs = graphs that can be partitioned into n-distinct types with edges only running between unlike types
+-- Other resources: Albert and Barabasi, Dorogovetsev and Mendes, Strogatz
+-- Great glossary on page 5
+-- Social Networks
+-- Information Networks
+--- Transfer of information (e.g. citation network, www = website network)
+--- Crawls explore the world-wide web's structure
+-- Technological Networks
+--- power-networks
+-- Biological Networks
+--- metabolic networks                  
+--- protein networks
+--- gene regulatory networks (Stewart Kauffman's work)
+--- food webs
+--- neural networks
+--- vascular networks
+- Network Properties
+-- Random Graphs
+--- First studied by Rappaport and Erdos and Renyi
+--- Much work here. Many statistical properties have been proved or investigated rigorously
+-- Small World Effect
+--- Most nodes seem to be connected by a short path
+--- Great table of different networks and various statistics pg. 10
+-- Transitivity or Clustering
+--- Deviation from a random distribution of edges among nodes (i.e. some nodes are more connected than expected from random)
+--- The friend of your friend is also likely to be your friend
+--- Clustering co-efficient
+---- Sometime referred to as network density
+-- Degree Distribution
+--- Histrogram with the fraction of vertices in the network that have k degree = pk
+--- Random = binomial or Poisson in the limit of large graphs
+--- Real networks tend to be highly right-skewed with long tails
+--- Rarely are there enough measurements to get a good estimate of the tail
+---- Solution 1: construct a histogram with bin sizes that increase exponentially with degree and then frequency is divided by the width of the bin to normailze them
+---- Solution 2: plot cumulative degree distribution. Does not suffer from the issue of losing the information between points within bins.
+--- Exponential distributions and Power law distributions are common and can be investigated using log-log plots using exponential and semi-logarithmic scales, respectively
+--- Bipartite graphs have degree distributions for both parts
+--- Directed graphs have in and out degree distributions which can be analyzed together as the join distribution
+-- Scale Free Networks
+--- the functional form of some property(ies) remains unchanged under re-scaling
+--- i.e. f(x) remains unchanged in form when x is rescaled
+--- Because the solutions to f(ax) = bf(x), the power-law is synonymous with scale-free
+--- have some consistent structural properties
+-- Maximum Degree
+--- k_max = the greatest number of edges any node in the network has
+---- The prediction for a random under certain assumptions has been proven
+---- Preferential attachment can produce the power-law k_max
+-- Network Resilience
+--- change in network properties given the removal of edges
+--- there are different ways in which vertices can be removed
+--- Barabasi's work with the internet is classic
+-- Mixing Patterns
+--- The association or dissassociation of node types through vertex distribution
+--- Food webs show that although there are many links between plants and herbivores and herbivores and carnivores, 
+there are few links among herbivores or between carnivores and plants
+--- Assortative mixing or homophily
+--- Although usually conducted with respect to node properties, this can also be done with vertex properties
+-- Degree Correlations
+--- Do high degree associate preferentially with other high degree nodes? Or high to low?
+-- Community Structure (modules)
+--- Groups of nodes with high densities of edges within them, with lower densities between
+--- Hierarchical clustering can be done here
+-- Network Navigation
+--- How connections are perceived also influences the dynamics of networks.
+--- For example, Milgram's study showed not only that short links exist but also that individuals are good at finding them.
+-- Other network properties
+--- Size of the largest component 
+--- Betweeness centrality = the number of geodesic paths between other vertices that run through a given vertex 
+---- Also Eigen and Laplacian centralities
+--- Recurrent motifs (small subgraphs)
+*Note there are two sections on the mathematics of network statistics for random (and it's various flavors) and small world graphs.
+-- Models of Network Growth
+--- Preferential Attachement 
+---- Built on the work of Hervert Simaon (1950s) on the "rich get richer" phenomenon
+---- Developed by Derek de Solla Price as cumulative advantage (1965) for networks
+---- Popularized by Barabasi and Albert 
+---- There were three mathematical models of how this occurs
+--- Other growth models
+--- Vertex copying models
+---- In some systems the preferential attachment model doesn't apply (e.g. protein networks)
+---- a network grows nodes by copying exisiting nodes (=vertices)
+-- Processes Taking Place on Networks
+--- E.g. how does the structure of a food-web affect the population dynamics of the species
+--- Percolation Theory and Network Resilience
+---- A set is determined either occupied or unoccupied through some dynamic process                  
+---- E.g. the spread of disease or information
+---- Both site (node) and bond (edge) percolation
+---- There are several proofs predicting the dynamics of percolation in graphs of different structure
+--- Search on Networks
+---- Resource is stored in nodes on a network
+----- 1. Exhaustive network search: e.g. network crawl
+----- 2. Guided network search: crawling is done with some criteria
+----- 3. Network navigation: can one design network structures to make a particular search algorithm perform well?
+--- Phase Transistions on Networks
+---- application of tradiational stastistical mechanical models that show phase transitions
+--- Other processes on networks (see Strogatz [387])
+---- diffusion processes (e.g. random walks)
+---- Discrete dynamical processes (e.g. random Boolean nets of Kauffman)
+---- Cellular automata on networks (Watts and Strogatz)
+---- Iterated games
+---- Weakly coupled oscillators
+---- Neural networksn
+---- Self-organized critical models 
+-- Future Research
+--- 1. Develop and organize new and current structural statistics for newtorks "...at present no more than a grab-bag of miscellaneous and largely unrelated tools."
+--- 2. Develop more sophisticated models of networks
+--- 3. Study and understand the behavior of processes taking place on newtorks
+
+
+
+
+@article{guimaraes2011,
+    author  = "P.R. Guimaraes and P. Jordano and J.N. Thompson",
+    title   = "Evolution and coevolution in mutualistic networks",
+    year    = "2011",
+    journal = "Ecology Letters",
+    volume  = "14",
+    number  = "",
+    pages   = "877--885"
+}
+                  
+- Examined the effect of network structure (i.e. the pattern of connections to super-generalists).
+- Used a dynamic, evolutionary model using a simple trait parameterization.
+- Found that the presence of cascades increased the effect of co-evolution and that presence 
+of super-generalists decreased the number of changes only in the co-evolutionary structures and
+increased the shift in both complimentary and convergence.
+
+@article{pires2011,
+    author  = "M.M. Pires and P.R. Guimar\~{a}es and M.S. Ara\'{u}jo and A.A. Giaretta and J.C.L. Costa and S.F. {dos Reis}",
+    title   = "The nested assembly of individual-resource networks",
+    year    = "2011",
+    journal = "Journal of Animal Ecology",
+    volume  = "doi: 10.1111/j.1365-2656.2011.01818.x",
+    number  = "",
+    pages   = "1--8"
+}
+                  
+@article{callaway2002,
+    author  = "Ragan M. Callaway and Robin W. Brooker and Philipe Choler and Zaal Kikvidze and Christopher J. Lortie and Richard Michalet and Leonardo Paolini and Francisco I. Pugnaire and Beth Newingham and Erik T. Ashehoug and Cristina Armas and David Kikodze and Bradley J. Cook",
+    title   = "Positice interactions among alpine plants increase with stress",
+    year    = "2002",
+    journal = "Nature",
+    volume  = "417",
+    number  = "",
+    pages   = "844--848"
+}
+
+Facilitation interactions, as measured using a Relative Neighbor Effect metric (Markham and Chanway 1996), increase with stress. This is primarily correlated with temperature. 
+                  
+@article{michalet2006,
+    author  = "Richard Michalet and Robin W. Brooker and Lohengrin A. Cavieres and Zaal Kikvidze and Cristopher J. Lortie and Francisco I. Pugnaire and Alfonso Valiente-Banuet and Ragan M. Callaway",
+    title   = "Do biotic interactions shape both sides of the humped-back model of species richness in plant communities?",
+    year    = "2006",
+    journal = "Ecology Letters",
+    volume  = "9",
+    number  = "",
+    pages   = "767--773"
+}
+
+Extends Grime's original model of the richness-biomass relationship considering the effects of facilitation and how 
+the interaction between nurse and beneficiary species changes with altered levels of stress.
+                  
+@article{whitham2006,
+    author  = "Thomas G. Whitham and et al.",
+    title   = "A framework for community and ecosystem genetics: from genes to ecosystems",
+    year    = "2006",
+    journal = "Nature Reviews Genetics",
+    volume  = "7",
+    number  = "",
+    pages   = "510--523"
+}
+                  
+
+
+@article{whitham1989,
+    author  = "Thomas G. Whitham",
+    title   = "Plant hybrid zones as sinks for pests",
+    year    = "1989",
+    journal = "Science",
+    volume  = "244",
+    number  = "",
+    pages   = "1490--1493"
+}
+
+Tom shows that Pemphigus survivorship is higher in hybrid zones, suggesting that plant 
+hybridization maintains pest populations.
+
+@article{whitham1978,
+    author  = "Thomas G. Whitham",
+    title   = "Habitat selection by \textit{Phemphigus} aphids in response to resource limitation and competition",
+    year    = "1978",
+    journal = "Ecology",
+    volume  = "59",
+    number  = "6",
+    pages   = "1164--1176"
+}
+
+Tom's first paper. It shows that the behavior of Pemphigus 
+has evolved in such a way to maximize the probability of success 
+on Populus angustifolia given the potential for resource limitation.
+                  
+Examples: 
+
+@article{greenwade93,
+    author  = "George D. Greenwade",
+    title   = "The {C}omprehensive {T}ex {A}rchive {N}etwork ({CTAN})",
+    year    = "1993",
+    journal = "TUGBoat",
+    volume  = "14",
+    number  = "3",
+    pages   = "342--351"
+}
+
+@book{goossens93,
+    author    = "Michel Goossens and Frank Mittlebach and Alexander Samarin",
+    title     = "The Latex Companion",
+    year      = "1993",
+    publisher = "Addison-Wesley",
+    address   = "Reading, Massachusetts"
+}
+
+@article{baiser2011,
+    author  = "Benjamin Baiser and Roxanne S. Ardeshiri and Aaron M. Ellison",
+    title   = "Species Richness and Trophic Diversity Increase Decomposition in a Co-Evolved Food Web",
+    year    = "2011",
+    journal = "PLoS",
+    volume  = "6",
+    number  = "6",
+    pages   = "e20672"
+}
+                  
+Diversity and the potential effects of species losses and gains on ecosystems. 
+                  
+Here, we assessed how species richness and trophic diversity affect decomposition rates in a complete aquatic food web: the five trophic level web that occurs within water-filled leaves of the northern pitcher plant, Sarracenia purpurea. 
+                  
+We identified a trophic cascade in which top-predators — larvae of the pitcher- plant mosquito — indirectly increased bacterial decomposition by preying on bactivorous protozoa. 
+                  
+Our data also revealed a facultative relationship in which larvae of the pitcher-plant midge increased bacterial decomposition by shredding detritus. 
+                  
+These important interactions occur only in food webs with high trophic diversity, which in turn only occur in food webs with high species richness. 
+                  
+We show that species richness and trophic diversity underlie strong linkages between food web structure and dynamics that influence ecosystem functioning. 
+                  
+The importance of trophic diversity and species interactions in determining how biodiversity relates to ecosystem functioning suggests that simply focusing on species richness does not give a complete picture as to how ecosystems may change with the loss or gain of species.
+                  
+@article{ellison2005,
+    author  = "A. M. Ellison and M. S. Bank and B. D. Clinton and
+                  E. A. Colburn and K. Elliott and C. R. Ford and D. R. Foster and
+                  B. D. Kloeppel and J. D. Knoepp and G. M. Lovett and
+                  J. Mohan and D. A. Orwig and N. L. Rodenhouse and
+                  W. V. Sobczak and K. A. Stinson and J. K. Stone and
+                  C. M. Swan and J. Thompson and B. von Holle and
+                  J. R. Webster",
+    title   = "Loss of foundation species: consequences for the structure and dynamics of forested ecosystems",
+    year    = "2005",
+    journal = "Frontiers in Ecology and the Environment",
+    volume  = "9",
+    number  = "",
+    pages   = "479--486"
+}
+
+                  
+@article{brost2012,
+    author  = "B.M. Brost and P. Beier",
+    title   = "Land facets to design linkages for climate change",
+    year    = "2012",
+    journal = "Ecological Applications",
+    volume  = "22",
+    number  = "",
+    pages   = "87--103"
+}
+                  
+@InCollection{Doe05,
+author     =  {John Doe},
+title      =  {Dynamic Ambient Paradigms},
+booktitle  =  {Paradigm Gems 2},
+pages      = {223--233},
+publisher  = {Addison Wesley},
+year       = 2005,
+editor     = {Averell Doe}
+}
+                  
+@InCollection{,
+author     =  {John Doe},
+title      =  {Dynamic Ambient Paradigms},
+booktitle  =  {Paradigm Gems 2},
+pages      = {223--233},
+publisher  = {Addison Wesley},
+year       = 2005,
+editor     = {Averell Doe}
+}
+
+                  
+@article{ohtsuki2006,
+    author  = "H. Ohtsuki and C. Hauert and E. Lieberman and M.A. Nowak",
+    title   = "A simple rule for the evolution of cooperation on graphs and social networks",
+    year    = "2006",
+    journal = "Nature",
+    volume  = "44",
+    number  = "",
+    pages   = "502-505"
+}
+
+                  
+@article{wimp2004,
+    author  = "G.M. Wimp and W.P. Young and S.A. Woolbright and G.D. Martinsen and P. Keim and T.G. Whitham",
+    title   = "Conserving plant genetic diversity for dependent animal communities",
+    year    = "2004",
+    journal = "Ecology Letters",
+    volume  = "7",
+    number  = "",
+    pages   = "776-780"
+}
+                  
+@article{johnson2005,
+    author  = "M.T.J. Johnson and A.A. Agrawal",
+    title   = "Plant genotype and environment interact to shape a diverse arthropod community on evening primrose (Oenothera biennis)",
+    year    = "2005",
+    journal = "Ecology",
+    volume  = "86",
+    number  = "",
+    pages   = "874-885"
+}
+                  
+@article{crutsinger2006,
+    author  = "G.M. Crutsinger and M.D. Collins and J.A. Fordyce and Z. Gompert and C.C. Nice and N.J. Sanders",
+    title   = "Plant genotypic diversity predicts community structure and governs an ecosystem process",
+    year    = "2006",
+    journal = "Science",
+    volume  = "313",
+    number  = "",
+    pages   = "966-968"
+}
+
+@article{strauss2005,
+    author  = "S.Y. Strauss and H. Sahli and J.K. Connor",
+    title   = "Toward a more trait-centered approach to diffuse (co)evolution",
+    year    = "2005",
+    journal = "New Phytologist",
+    volume  = "165",
+    number  = "",
+    pages   = "81-90"
+}
+
+                  
+@article{thebault2010,
+    author  = "E. Thebault and C. Fontaine",
+    title   = "Stability of ecological communities and the architecture of mutualistic and trophic networks",
+    year    = "2010",
+    journal = "Science",
+    volume  = "329",
+    number  = "",
+    pages   = "853-856"
+}
+
+                  
+@article{bascompte2003,
+    author  = "J. Bascompte and P. Jordano and C.J. Melian and J.M. Olesen",
+    title   = "The nested assembly of plant-animal mutualistic networks",
+    year    = "2003",
+    journal = "PNAS",
+    volume  = "100",
+    number  = "",
+    pages   = "9383-9387"
+}
+                  
+@article{cohen1979,
+    author  = "J.E. Cohen",
+    title   = "Graph theoretic models of food webs",
+    year    = "1979",
+    journal = "Rocky Mountain Journal of Mathematics",
+    volume  = "9",
+    number  = "",
+    pages   = "29-30"
+}
+ 
+@article{macarthur1955,
+    author  = "R. MacArthur",
+    title   = "Fluctuations of animal populations and a measure of community stability",
+    year    = "1955",
+    journal = "Ecology",
+    volume  = "36",
+    number  = "",
+    pages   = "533-536"
+}
+                 
+@article{may1972,
+    author  = "R.M. May",
+    title   = "Will a large complex system be stable?",
+    year    = "1972",
+    journal = "Nature",
+    volume  = "238",
+    number  = "",
+    pages   = "413-414"
+}
+
+@article{ehrlich1964,
+    author  = "P.R. Ehrlich and P.H. Raven",
+    title   = "Butterflies and plants: A study of coevolution",
+    year    = "1964",
+    journal = "Evolution",
+    volume  = "18",
+    number  = "",
+    pages   = "586-608"
+}
+
+@article{brooks1979,
+    author  = "D.R. Brooks",
+    title   = "Testing the context and extent of host-parasite Coevolution",
+    year    = "1979",
+    journal = "Systems Biology",
+    volume  = "28",
+    number  = "",
+    pages   = "299-307"
+}
+                 
+@article{levin1977,
+    author  = "S.A. Levin and J.D. Udovic",
+    title   = "A mathematical model of coevolving populations",
+    year    = "1977",
+    journal = "American Naturalist",
+    volume  = "111",
+    number  = "",
+    pages   = "657-675"
+}
+                  
+@article{fritz1988,
+    author  = "R.S. Fritz and P.W. Price",
+    title   = "Genetic variation among plants and insect community structure: Willows and Sawflies",
+    year    = "1988",
+    journal = "Ecology",
+    volume  = "69",
+    number  = "",
+    pages   = "845-856"
+}
+                  
+@article{thompson1999,
+    author  = "John N. Thompson",
+    title   = "The evolution of species interactions",
+    year    = "1999",
+    journal = "Science",
+    volume  = "284",
+    number  = "",
+    pages   = "2116-2118"
+}
+                  
+@book{antonovics1992,
+    author    = "Janis Antonivics",
+    title     = "Toward Community Genetics in Plant Resistance to Herbivores",
+    year      = "1992",
+    publisher = "University of Chicago",
+    address   = "Chicago, IL"
+}
+
+@Manual{enaR,
+    title = {enaR: Tools ecological network analysis (ena)},
+    author = {M.K. Lau and S.R. Borrett and D.E. Hines},
+    year = {2012},
+    note = {R package version 1.01},
+    url = {http://CRAN.R-project.org/package=enaR},
+  }
+
+                  
+@article{poisot2012,
+    author  = "Timoth\'ee Poisot and Elsa Canard and David Mouillot and Nicholas Mouquet and Dominique Gravel",
+    title   = "The dissimilarity of species interaction networks",
+    year    = "2012",
+    journal = "Ecology Letters",
+    volume  = "15",
+    number  = "",
+    pages   = "1353-1361"
+}
+
+@article{allesina2012,
+    author  = "Stefano Allesina and Si Tang",
+    title   = "Stability criteria for complex ecosystems",
+    year    = "2012",
+    journal = "Nature",
+    volume  = "483",
+    number  = "",
+    pages   = "205-208"
+}
+                  
+@article{walsh2009,
+    author  = "Bruce Walsh and Mark W. Blows",
+    title   = "Abundant Genetic Variation + Strong Selection = Multivariate Genetic Constraints: A Genomic View of Adaptation",
+    year    = "2009",
+    journal = "Annual Review of Ecology and Evolutionary Systematics",
+    volume  = "40",
+    number  = "",
+    pages   = "41-59"
+}
+
+
+                  
+@article{vavrek2011,
+    title = {fossil: palaeoecological and palaeogeographical analysis tools},
+    author = {Matthew J. Vavrek},
+    year = {2011},
+    journal = {Palaeontologia Electronica},
+    volume = {14},
+    pages = {1T},
+    number = {1},
+    note = {R package version 0.3.0},
+  }
+                  
+@article{street2011,
+    author  = "N. Street and S. Jansson and T.R. Hvidsten",
+    title   = "A systems biology model of the regulatory network in Populus leaves reveals interacting regulators and conserved regulation",
+    year    = "2011",
+    journal = "BMC Plant Biology",
+    volume  = "11",
+    number  = "13",
+    pages   = "1-15"
+}
+                  
+@Manual{sna,
+    title = {sna: Tools for Social Network Analysis},
+    author = {Carter T. Butts},
+    year = {2010},
+    note = {R package version 2.2-0},
+    url = {http://CRAN.R-project.org/package=sna},
+  }
+                  
+@Manual{vegan,
+    title = {vegan: Community Ecology Package},
+    author = {Jari Oksanen and F. Guillaume Blanchet and Roeland Kindt and Pierre Legendre and Peter R. Minchin and R. B. O'Hara and Gavin L. Simpson and Peter Solymos and M. Henry H. Stevens and Helene Wagner},
+    year = {2012},
+    note = {R package version 2.0-3},
+    url = {http://CRAN.R-project.org/package=vegan},
+  }
+
+@book{mccarthy2007,
+    author    = "M.A. McCarthy",
+    title     = "Bayesian Methods for Ecology",
+    year      = "2007",
+    publisher = "Cambridge University Press",
+    address   = "Cambridge, U.K."
+}
+
+@article{fortuna2010,
+    author  = "M.A. Fortuna and D.B. Stouffer and J.M. Olesen and P. Jordano and D. Mouillot and B.R. Krasnov and R. Poulin and J. Bascompte",
+    title   = "Nestedness versus modularity in ecological networks: two sides of the same coin?",
+    year    = "2010",
+    journal = "Journal of Animal Ecology",
+    volume  = "79",
+    number  = "",
+    pages   = "811-817"
+}
+                  
+@article{wimp2007,
+    author  = "G.M. Wimp and S. Wooley and R.K. Bangert and W.P. Young and G.D. Martinsen and P. Keim and R.L. Lindroth and T.G. Whitham",
+    title   = "Plant genetics predicts intra-annual variation in phytochemistry and arthropod community structure",
+    year    = "2007",
+    journal = "Molecular Ecology",
+    volume  = "16",
+    number  = "",
+    pages   = "5057-5069"
+}
+                  
+                  
+@article{naesborgunpub,
+    author  = "R.R. Naesborg",
+    title   = "Unpublished data",
+    year    = "Unpublished",
+    journal = "",
+    volume  = "",
+    number  = "",
+    pages   = ""
+}
+
+
+@article{lamit2011,
+    author  = "L.J. Lamit and M.A. Bowker and L.M. Holeski and R.R. Naesborg and S.C. Wooley and M. Zinkgraf and R.L. Lindroth and T.G. Whitham and C.A. Gehring",
+    title   = "Genetically-based trait variation within a foundation tree species influences a dominant bark lichen",
+    year    = "2011",
+    journal = "Fungal Ecology",
+    volume  = "4",
+    number  = "",
+    pages   = "103-106"
+}
+
+@book{diamond1975,
+    author    = "J.M. Diamond",
+    title     = "Assembly of species communities",
+    year      = "1975",
+    publisher = "Belknap Press",
+    address   = "Cambridge, MA."
+}
+ 
+@article{gotelli2000,
+    author  = "N.J. Gotelli",
+    title   = "Null model analysis of species co-occurrence patterns",
+    year    = "2000",
+    journal = "Ecology",
+    volume  = "81",
+    number  = "",
+    pages   = "2606-2621"
+}
+                  
+
+
+@article{smith2011,
+    author  = "D.S. Smith and J.K. Bailey and S.M. Shuster and T.G. Whitham",
+    title   = "A geographic mosaic of trophic interactions and selection: trees, aphids and birds",
+    year    = "2011",
+    journal = "Journal of Evolutionary Biology",
+    volume  = "24",
+    number  = "",
+    pages   = "422-429"
+}
+                 
+                  
+@book{deangelis1992,
+    author  = "D. DeAngelis and L.J. Gross",
+    title   = "Individual-based models and approaches in ecology:populations, communities and ecosystems",
+    year    = "1992",
+    publisher = "Springer",
+    address   = "New York, U.S.A."
+}
+                  
+@book{pascual2005,
+    author  = "M. Pascual and J. Dunne",
+    title   = "Ecological Networks: Linking Structure to Dynamics in Food Webs",
+    year    = "2005",
+    publisher = "SFI and Oxford University Press",
+    address   = "Oxford, U.K."
+}
+                  
+@book{salasinprep,
+    author  = "A.K. Salas and S.R. Borrett",
+    title   = "Do nested, asymmetric network characteristics make mutualistic communities more evolutionarily stable?",
+    year    = "In Prep",
+}
+                  
+@book{lonsdorfinprep,
+    author  = "E.V. Lonsdorf and S.M. Shuster and M.K. Lau and T.G. Whitham",
+    title   = "How tangled is the bank? Effective community diversity and ecologically-dependent opportunity for selection",
+    year    = "In Prep",
+}
+                  
+@article{lau2010,
+    author  = "MK Lau and TG Whitham and LJ Lamit and NC Johnson",
+    title   = "Ecological and evolutionary interaction network exploration: addressing complexity of biological interactions in natural systems with community genetics and statistics",
+    year    = "2010",
+    journal = "JIFS",
+    volume  = "7",
+    number  = "",
+    pages   = "17-25"
+}
+
+                  
+@article{araujo2011,
+    author  = "M.B. Ara\'ujo and A. Rozenfeld and C. Rahbek and P.A. Marquet",
+    title   = "Using species co-occurrence networks to assess the impacts of climate change",
+    year    = "2011",
+    journal = "Ecography",
+    volume  = "34",
+    number  = "",
+    pages   = "897-908"
+}
+                  
+@article{memmott2007,
+    author  = "J Memmott and PG Craze and NM Waser and MV Price",
+    title   = "Global warming and the disruption of plant-pollinator interactions",
+    year    = "2007",
+    journal = "Ecology Letters",
+    volume  = "10",
+    number  = "8",
+    pages   = "1-8"
+}
+
+                  
+@article{danieli_silva2012,
+    author  = "Aline Danieli-Silva and Jana Magaly Tesserolli de Souza and Ana Julia Donatti and Ricardo Pamplona Campos and Jose Vicent\'{e}-Silva and Leandro Freitas and Isabela Galarda Varassin",
+    title   = "Do pollinatino syndromes cause modularity and predict interactions in a pollination network in tropical high-altitude grasslands?",
+    year    = "2012",
+    journal = "Oikos",
+    volume  = "121",
+    number  = "",
+    pages   = "35--43"
+}
+                  
+- pollination syndromes are pair-wise specializations, but generalization has been shown to be more common
+- evaluated the departure of the observed interaction network structure from that expected by syndromes, modular structure, module relation to syndromes and the robustness of syndromes
+- Findings:
+- syndromes predicted 69% of the interactions
+- Greater modularity than expected by chance
+- modules were associated with pollination syndromes
+- plant phylogeny did not account for significant amount of variation in interactions
+- phylogenetic signal only significant when flies were removed, probably because fly interactions are extremely labile
+- Concluded: 
+- Support the concept of pollination syndromes
+- Accuracy of pollination syndromes was predicted by ornithophily and melittophily
+                  
+@article{butterfield2010,
+    author  = "Bradley J. Butterfield and Julio L. Betancourt and Raymond M. Turner and John M. Briggs",
+    title   = "Facilitation drives 65 years of vegetation change in the Sonoran Desert",
+    year    = "2010",
+    journal = "Ecology",
+    volume  = "91",
+    number  = "4",
+    pages   = "1132--1139"
+}
+                                    
+- in low productivity ecosystems, abiotic factors have been thought to drive ecological processes
+- precip had a stronger effect under canopies than in open due to lowered evapotranspiration
+- density and precipitation indirectly affect perenniel canopy cover
+- mortality driven by competition, but not by precipitation
+- model explained substantial variation
+- simulation model showed positive feedback of density on cover produces unique temporal abudance patterns through buggering changes in abudnaces and decoupling community abundance from precipitation patterns at high abundances
+
+
+@article{Urban2011,
+    author  = "Mark C. Urban",
+    title   = "The evolution of species interactions across natural landscapes",
+    year    = "2011",
+    journal = "Ecology Letters",
+    volume  = "14",
+    number  = "",
+    pages   = "723--732"
+}
+                  
+- Compiled studies (75) to estimate the relative contribution of biotic selection, gene flow and spatially autocorrelated biotic selection to divergence in traits involved in species interactions
+- Biotic selection explained 16% of the variance in trait means for biotic interactions
+- Most biotic selection was spatially auto-correlated, thus local adaptation can be operative even under moderate levels of gene flow
+                  
+@article{strauss2002,
+    author  = "Sharon Y. Strauss and Jeniffer A. Rudgers and Jennifer A. Lau and Rebecca E. Irwin",
+    title   = "Direct and ecological costs of resistance to herbivory",
+    year    = "2002",
+    journal = "Trends in Ecology and Evolution",
+    volume  = "17",
+    number  = "6",
+    pages   = "278--285"
+}
+                  
+- Reviews examples of costs of herbivore resitance
+- Briefly mentions "third-party" costs, such as the attraction of herbivore enemies
+                  
+@article{thorpe2011,
+    author  = "Andrea S. Thorpe and Erik T. Aschehoug and Daniel Z. Atwater and Ragan M. Callaway",
+    title   = "Interactions among plants and evolution",
+    year    = "2011",
+    journal = "Journal of Ecology",
+    volume  = "99",
+    number  = "",
+    pages   = "729--740"
+}
+                  
+- Goals: generate ideas of how intra-trophic (plant) interactions may affect evolution and how evolution may affect plant interactions
+- niche partitioning evolobing through competitive interactions, facilitative interactions 
+- link to diversity and ecosystem function as well as trait-based community organization
+- history of coexistence might affect competitive outcomes (e.g. invasions)
+- place into the context of the geographic mosaic of coevolution
+- Lines of Inquiry
+- 1) 
+- evolutionary consequences contribute to communities as more than assemblages of independent species
+                  
+@article{ovaskainan2010,
+    author  = "Otso Ovaskainan, Jenni Hottola and Janne Soininen",
+    title   = "Modeling species co-occurrence by multivariate logistic regression generates new hypotheses on fungal interactions",
+    year    = "2010",
+    journal = "Ecology",
+    volume  = "91",
+    number  = "9",
+    pages   = "2514-2521"
+}
+                  
+- Generated fungal co-occcurrence models using multivariate logistic regression with Bayesian hierarchical statistical methods
+- Showed that including habitat veriables altered the magnitude and sign as well as the overall abundance of interactions, although there was very high correlation between the two models (without and with habitat variables)
+- Found more + than - co-occurrences, possibly due to negative interactions being seen as positive interactions
+
+@article{Milns2010,
+    author  = "Isobel Milns and Colin M. Beale and V. Anne Smith",
+    title   = "Revealing ecological networks using Bayesian network inference algorithms",
+    year    = "2010",
+    journal = "Ecology",
+    volume  = "91",
+    number  = "7",
+    pages   = "1892--1899"
+}
+                  
+- Compare Bayesian network modeling to ecological networks of birds
+- Used both environmental and species abundance data
+- Useful for modeling real networks and for illucidating new interactions
+- Need to incorporate spaital autocorrelation into models
+- Question: does this or the methods in the faisal paper take into account shared absences?
+
+@article{faisal2010,
+    author  = "Ali Faisal and Frank Dondelinger and Drik Husmeier and Colin M. Beale",
+    title   = "Inferring species interaction networks from species abundance data: A comparative evaluation of various statistical and machine learning methods",
+    year    = "2010",
+    journal = "Ecological Informatics",
+    volume  = "5",
+    number  = "",
+    pages   = "451--464"
+}
+                  
+- Compare methods for resolving interaction networks from species abundance data. 
+- Found that Bayesian networks performed best, although simpler partial correlation based methods performed well too
+- Spatial autocorrelation was important for more acurate modeling
+
+                  
+@article{wade2007,
+    author  = "M. J. Wade",
+    title   = "The co-evolutionary genetics of ecological communities",
+    year    = "2007",
+    journal = "Nature Reviews Genetics",
+    volume  = "8",
+    number  = "",
+    pages   = "185--195"
+}
+                  
+- Detection, investigation and understanding of the genetic bases of the co-adaptive process and co-speciation
+- 1. Patterns of co-adaptation and co-speciation to illustrate the consequences of co-evolution for populations and communities
+- 2. Concepts of evolutionary genetic theory (e.g. GxE and GxG), population genetic subdivision and genetic variation in the effect of one species on another in co-evolution
+- 3. Co-dispersal and co-transmission allows ntergenomic epistasis -- genes of one species interact with specific genes of another species -- to respond to selection
+-- Co-inheritance of trans-specific gene combinations
+- 4. Why community genetics (an integration of genetics and community ecology)?
+
+                  
+@article{butts2009,
+    author  = "C.T. Butts",
+    title   = "Revisiting the foundations of network analysis",
+    year    = "2009",
+    journal = "Science",
+    volume  = "325",
+    number  = "",
+    pages   = "414--416"
+}
+                  
+- Appropriate use of network analysis depends on choosing the right network representation for the problem at hand
+- Standard framework
+-- Very restrictive. We must ba able to reduce the system to a set of discrete components whose interactions are strictly dyadic in nature.
+-- This reduced structure has facilitated the mathematical and associated scientific applications
+-- What factors should be considered when choosing a network representation?
+--- 1. When is a node a node?
+---- Defining a node needs to be determined by the question of interest and the scale at which that question is relevant
+---- Also, determining groups of nodes to aggregate is another possible dimension of this question
+--- 2. When is an edge an edge?
+---- Direction, weight, variatbility
+---- Can a relationship be adequately approximated by a constant function?
+---- "More studies that assess the effectiveness of such approximations - and provide concrete, empirically validated guidelines for practice within particular problem domains- would be a welcome addtion to the literature."
+--- 3. Time Scales and Network Processes
+---- E.g. studies of diffusion dynamics suggest that partnership concurrency is an important predictor of epidemic potential
+---- '...edge dynamics (poential and actual data transfers) can be understood only by taking into account the dynamic nature of the set of nodes."
+
+
+
+@article{newman2003,
+    author  = "M.E.J. Newman",
+    title   = "The structure and function of complex networks",
+    year    = "2003",
+    journal = "SFI",
+    volume  = "",
+    number  = "",
+    pages   = "1--58"
+}
+                  
+- This is an internal document from SFI by Mark Newman, which looks to be the precursor to his networks textbook.
+- Intro: 
+-- Originated from Euler's solution of the Konigsberg bridge problem, formailzing as a graph.
+-- Questions about single nodes are not relevant in large graphs (hundreds of nodes)
+-- "The human eye is an analytic tool of remarkable power, and eyeballing pictures of networks is an excellent 
+way to gain an understanding of their structure." 
+-- Large graphs for which eyeballing fails must be investigated statistically
+-- Goals: 
+--- 1) find statstical properties (e.g. path lengths and degree distributions) that characterize the structure and behavior of networked systems
+--- 2) create models of networks that can help illucidate the meaning of these properties
+--- 3) predict behavior via structural properties and the local rules that govern vertices
+-- "Studes of the effects of structure on system behavior on the other hand are still in their infancy."
+- Types of Networks
+-- digraphs = directed graphs
+-- hyperedges = edges taht join more than two vertices
+-- n-partite graphs = graphs that can be partitioned into n-distinct types with edges only running between unlike types
+-- Other resources: Albert and Barabasi, Dorogovetsev and Mendes, Strogatz
+-- Great glossary on page 5
+-- Social Networks
+-- Information Networks
+--- Transfer of information (e.g. citation network, www = website network)
+--- Crawls explore the world-wide web's structure
+-- Technological Networks
+--- power-networks
+-- Biological Networks
+--- metabolic networks                  
+--- protein networks
+--- gene regulatory networks (Stewart Kauffman's work)
+--- food webs
+--- neural networks
+--- vascular networks
+- Network Properties
+-- Random Graphs
+--- First studied by Rappaport and Erdos and Renyi
+--- Much work here. Many statistical properties have been proved or investigated rigorously
+-- Small World Effect
+--- Most nodes seem to be connected by a short path
+--- Great table of different networks and various statistics pg. 10
+-- Transitivity or Clustering
+--- Deviation from a random distribution of edges among nodes (i.e. some nodes are more connected than expected from random)
+--- The friend of your friend is also likely to be your friend
+--- Clustering co-efficient
+---- Sometime referred to as network density
+-- Degree Distribution
+--- Histrogram with the fraction of vertices in the network that have k degree = pk
+--- Random = binomial or Poisson in the limit of large graphs
+--- Real networks tend to be highly right-skewed with long tails
+--- Rarely are there enough measurements to get a good estimate of the tail
+---- Solution 1: construct a histogram with bin sizes that increase exponentially with degree and then frequency is divided by the width of the bin to normailze them
+---- Solution 2: plot cumulative degree distribution. Does not suffer from the issue of losing the information between points within bins.
+--- Exponential distributions and Power law distributions are common and can be investigated using log-log plots using exponential and semi-logarithmic scales, respectively
+--- Bipartite graphs have degree distributions for both parts
+--- Directed graphs have in and out degree distributions which can be analyzed together as the join distribution
+-- Scale Free Networks
+--- the functional form of some property(ies) remains unchanged under re-scaling
+--- i.e. f(x) remains unchanged in form when x is rescaled
+--- Because the solutions to f(ax) = bf(x), the power-law is synonymous with scale-free
+--- have some consistent structural properties
+-- Maximum Degree
+--- k_max = the greatest number of edges any node in the network has
+---- The prediction for a random under certain assumptions has been proven
+---- Preferential attachment can produce the power-law k_max
+-- Network Resilience
+--- change in network properties given the removal of edges
+--- there are different ways in which vertices can be removed
+--- Barabasi's work with the internet is classic
+-- Mixing Patterns
+--- The association or dissassociation of node types through vertex distribution
+--- Food webs show that although there are many links between plants and herbivores and herbivores and carnivores, 
+there are few links among herbivores or between carnivores and plants
+--- Assortative mixing or homophily
+--- Although usually conducted with respect to node properties, this can also be done with vertex properties
+-- Degree Correlations
+--- Do high degree associate preferentially with other high degree nodes? Or high to low?
+-- Community Structure (modules)
+--- Groups of nodes with high densities of edges within them, with lower densities between
+--- Hierarchical clustering can be done here
+-- Network Navigation
+--- How connections are perceived also influences the dynamics of networks.
+--- For example, Milgram's study showed not only that short links exist but also that individuals are good at finding them.
+-- Other network properties
+--- Size of the largest component 
+--- Betweeness centrality = the number of geodesic paths between other vertices that run through a given vertex 
+---- Also Eigen and Laplacian centralities
+--- Recurrent motifs (small subgraphs)
+*Note there are two sections on the mathematics of network statistics for random (and it's various flavors) and small world graphs.
+-- Models of Network Growth
+--- Preferential Attachement 
+---- Built on the work of Hervert Simaon (1950s) on the "rich get richer" phenomenon
+---- Developed by Derek de Solla Price as cumulative advantage (1965) for networks
+---- Popularized by Barabasi and Albert 
+---- There were three mathematical models of how this occurs
+--- Other growth models
+--- Vertex copying models
+---- In some systems the preferential attachment model doesn't apply (e.g. protein networks)
+---- a network grows nodes by copying exisiting nodes (=vertices)
+-- Processes Taking Place on Networks
+--- E.g. how does the structure of a food-web affect the population dynamics of the species
+--- Percolation Theory and Network Resilience
+---- A set is determined either occupied or unoccupied through some dynamic process                  
+---- E.g. the spread of disease or information
+---- Both site (node) and bond (edge) percolation
+---- There are several proofs predicting the dynamics of percolation in graphs of different structure
+--- Search on Networks
+---- Resource is stored in nodes on a network
+----- 1. Exhaustive network search: e.g. network crawl
+----- 2. Guided network search: crawling is done with some criteria
+----- 3. Network navigation: can one design network structures to make a particular search algorithm perform well?
+--- Phase Transistions on Networks
+---- application of tradiational stastistical mechanical models that show phase transitions
+--- Other processes on networks (see Strogatz [387])
+---- diffusion processes (e.g. random walks)
+---- Discrete dynamical processes (e.g. random Boolean nets of Kauffman)
+---- Cellular automata on networks (Watts and Strogatz)
+---- Iterated games
+---- Weakly coupled oscillators
+---- Neural networksn
+---- Self-organized critical models 
+-- Future Research
+--- 1. Develop and organize new and current structural statistics for newtorks "...at present no more than a grab-bag of miscellaneous and largely unrelated tools."
+--- 2. Develop more sophisticated models of networks
+--- 3. Study and understand the behavior of processes taking place on newtorks
+
+
+
+
+@article{guimaraes2011,
+    author  = "P.R. Guimaraes and P. Jordano and J.N. Thompson",
+    title   = "Evolution and coevolution in mutualistic networks",
+    year    = "2011",
+    journal = "Ecology Letters",
+    volume  = "14",
+    number  = "",
+    pages   = "877--885"
+}
+                  
+- Examined the effect of network structure (i.e. the pattern of connections to super-generalists).
+- Used a dynamic, evolutionary model using a simple trait parameterization.
+- Found that the presence of cascades increased the effect of co-evolution and that presence 
+of super-generalists decreased the number of changes only in the co-evolutionary structures and
+increased the shift in both complimentary and convergence.
+
+@article{pires2011,
+    author  = "M.M. Pires and P.R. Guimar\~{a}es and M.S. Ara\'{u}jo and A.A. Giaretta and J.C.L. Costa and S.F. {dos Reis}",
+    title   = "The nested assembly of individual-resource networks",
+    year    = "2011",
+    journal = "Journal of Animal Ecology",
+    volume  = "doi: 10.1111/j.1365-2656.2011.01818.x",
+    number  = "",
+    pages   = "1--8"
+}
+                  
+@article{callaway2002,
+    author  = "Ragan M. Callaway and Robin W. Brooker and Philipe Choler and Zaal Kikvidze and Christopher J. Lortie and Richard Michalet and Leonardo Paolini and Francisco I. Pugnaire and Beth Newingham and Erik T. Ashehoug and Cristina Armas and David Kikodze and Bradley J. Cook",
+    title   = "Positice interactions among alpine plants increase with stress",
+    year    = "2002",
+    journal = "Nature",
+    volume  = "417",
+    number  = "",
+    pages   = "844--848"
+}
+
+Facilitation interactions, as measured using a Relative Neighbor Effect metric (Markham and Chanway 1996), increase with stress. This is primarily correlated with temperature. 
+                  
+@article{michalet2006,
+    author  = "Richard Michalet and Robin W. Brooker and Lohengrin A. Cavieres and Zaal Kikvidze and Cristopher J. Lortie and Francisco I. Pugnaire and Alfonso Valiente-Banuet and Ragan M. Callaway",
+    title   = "Do biotic interactions shape both sides of the humped-back model of species richness in plant communities?",
+    year    = "2006",
+    journal = "Ecology Letters",
+    volume  = "9",
+    number  = "",
+    pages   = "767--773"
+}
+
+Extends Grime's original model of the richness-biomass relationship considering the effects of facilitation and how 
+the interaction between nurse and beneficiary species changes with altered levels of stress.
+                  
+
+@article{whitham1989,
+    author  = "Thomas G. Whitham",
+    title   = "Plant hybrid zones as sinks for pests",
+    year    = "1989",
+    journal = "Science",
+    volume  = "244",
+    number  = "",
+    pages   = "1490--1493"
+}
+
+Tom shows that Pemphigus survivorship is higher in hybrid zones, suggesting that plant 
+hybridization maintains pest populations.
+
+@article{whitham1978,
+    author  = "Thomas G. Whitham",
+    title   = "Habitat selection by \textit{Phemphigus} aphids in response to resource limitation and competition",
+    year    = "1978",
+    journal = "Ecology",
+    volume  = "59",
+    number  = "6",
+    pages   = "1164--1176"
+}
+
+Tom's first paper. It shows that the behavior of Pemphigus 
+has evolved in such a way to maximize the probability of success 
+on Populus angustifolia given the potential for resource limitation.
+                  
+Examples: 
+
+@article{greenwade93,
+    author  = "George D. Greenwade",
+    title   = "The {C}omprehensive {T}ex {A}rchive {N}etwork ({CTAN})",
+    year    = "1993",
+    journal = "TUGBoat",
+    volume  = "14",
+    number  = "3",
+    pages   = "342--351"
+}
+
+@book{goossens93,
+    author    = "Michel Goossens and Frank Mittlebach and Alexander Samarin",
+    title     = "The Latex Companion",
+    year      = "1993",
+    publisher = "Addison-Wesley",
+    address   = "Reading, Massachusetts"
+}
+

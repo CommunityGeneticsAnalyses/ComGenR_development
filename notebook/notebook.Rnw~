@@ -35,7 +35,6 @@
 %%find . -type f -name '*~' | xargs rm -f
 
 
-
 \section{Summary}
 
 Community genetics seeks to identify the community level impacts of
