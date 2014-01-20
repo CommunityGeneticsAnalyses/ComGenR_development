@@ -27,6 +27,20 @@ publisher  = {Addison Wesley},
 year       = 2005,
 editor     = {Averell Doe}
 }
+                  
+@article{maestre2009,
+    author  = "F.T. Maestre and I. Mart\'{i}ınez, C. Escolar and A. Escudero",
+    title   = "On the relationship between abiotic stress and
+                  co-occurrence patterns: an assessment at the
+                  community level using soil lichen communities and
+                  multiple stress gradients",
+    year    = "2009",
+    journal = "Oikos",
+    volume  = "118",
+    number  = "",
+    pages   = "1015--1022"
+}
+
 
 @article{brost2012,
     author  = "B.M. Brost and P. Beier",
@@ -37,7 +51,17 @@ editor     = {Averell Doe}
     number  = "",
     pages   = "87--103"
 }
+                  
             
+@article{laughlin2007,
+    author  = "D.C. Laughlin and S.R. Abella",
+    title   = "Abiotic and biotic factors explain independent gradients of community composition in ponderosa pine forests",
+    year    = "2007",
+    journal = "Ecological Modelling",
+    volume  = "205",
+    number  = "",
+    pages   = "231--240"
+}
                   
                   
 @article{ohtsuki2006,
@@ -813,7 +837,12 @@ Extends Grime's original model of the richness-biomass relationship considering 
 the interaction between nurse and beneficiary species changes with altered levels of stress.
                   
 @article{whitham2006,
-    author  = "Thomas G. Whitham and et al.",
+  author = "T.G. Whitham and J.K. Bailey and J.A. Schweitzer and
+                  S.M. Shuster and R.K. Bangert and C.J. LeRoy and
+                  E.V. Lonsdorf and G.J. Allan and S.P. DiFazio and
+                  B.M. Potts and D.G. Fischer and C.A. Gehring and
+                  R.L. Lindroth and J.C. Marks and S.C. Hart and
+                  G.M. Wimp and S.C. Wooley",
     title   = "A framework for community and ecosystem genetics: from genes to ecosystems",
     year    = "2006",
     journal = "Nature Reviews Genetics",
@@ -1006,16 +1035,7 @@ editor     = {Averell Doe}
 }
 
                   
-@article{bascompte2003,
-    author  = "J. Bascompte and P. Jordano and C.J. Melian and J.M. Olesen",
-    title   = "The nested assembly of plant-animal mutualistic networks",
-    year    = "2003",
-    journal = "PNAS",
-    volume  = "100",
-    number  = "",
-    pages   = "9383-9387"
-}
-                  
+
 @article{cohen1979,
     author  = "J.E. Cohen",
     title   = "Graph theoretic models of food webs",
@@ -1026,15 +1046,6 @@ editor     = {Averell Doe}
     pages   = "29-30"
 }
  
-@article{macarthur1955,
-    author  = "R. MacArthur",
-    title   = "Fluctuations of animal populations and a measure of community stability",
-    year    = "1955",
-    journal = "Ecology",
-    volume  = "36",
-    number  = "",
-    pages   = "533-536"
-}
                  
 @article{may1972,
     author  = "R.M. May",
@@ -1232,24 +1243,7 @@ editor     = {Averell Doe}
     pages   = "103-106"
 }
 
-@book{diamond1975,
-    author    = "J.M. Diamond",
-    title     = "Assembly of species communities",
-    year      = "1975",
-    publisher = "Belknap Press",
-    address   = "Cambridge, MA."
-}
  
-@article{gotelli2000,
-    author  = "N.J. Gotelli",
-    title   = "Null model analysis of species co-occurrence patterns",
-    year    = "2000",
-    journal = "Ecology",
-    volume  = "81",
-    number  = "",
-    pages   = "2606-2621"
-}
-                  
 
 
 @article{smith2011,
@@ -1302,15 +1296,6 @@ editor     = {Averell Doe}
 }
 
                   
-@article{araujo2011,
-    author  = "M.B. Ara\'ujo and A. Rozenfeld and C. Rahbek and P.A. Marquet",
-    title   = "Using species co-occurrence networks to assess the impacts of climate change",
-    year    = "2011",
-    journal = "Ecography",
-    volume  = "34",
-    number  = "",
-    pages   = "897-908"
-}
                   
 @article{memmott2007,
     author  = "J Memmott and PG Craze and NM Waser and MV Price",

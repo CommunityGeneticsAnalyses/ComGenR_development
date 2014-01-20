@@ -10,8 +10,11 @@
 \usepackage{multicol} % \begin{multicols}{number of columns} \end{multicols}
 \usepackage{graphicx}
 \usepackage{amssymb}
+\usepackage{Sweave}
 \newcommand{\etal}{\textit{et al.}}
-\newcommand{\R}{\textbf{R}}
+\newcommand{\R }{\textbf{R}}
+\usepackage[cp1252]{inputenc} 
+\inputencoding{cp1252}
 \usepackage{hyperref}  %\hyperref[label_name]{''link text''}
                        %\hyperlink{label}{anchor caption}
                        %\hypertarget{label}{link caption}
@@ -24,10 +27,10 @@
 \begin{document}
 \maketitle
 
-Community Genetics is a field of biology that works at the interface
-between ecological genetics and community ecology. Being inherently
+Community Genetics is a field that works at the interface between
+ecological genetics and community ecology. Being inherently
 multi-disciplinary, the analytics involved have developed in separate
-fields. \textbf{ComGenR} is intended to synthesize these analytical
+fields. \textit{ComGenR} is intended to synthesize these analytical
 techniques and facilitate new analytically and computationally driven
 research tools. Here, we present an introduction to the package,
 broken into five main sections:
@@ -38,7 +41,7 @@ broken into five main sections:
 
 \section{Community Genetics Data}
 
-The primary aim of Community Genetics (CG) research is to test and
+Two primary aims of Community Genetics (CG) research are to test and
 quantify how genetic variation influences the distribution of species
 in a community \cite{whitham2006}. These studies have typically
 examined the composition of a community of organisms associated with
@@ -53,7 +56,7 @@ compiled and curated using spreadsheets (e.g. Microsoft Excel).
 When working in \R, these data are most easily managed and imported if
 they are in a standardized column format, where the first column is a
 set of labels for each column. For more detailed introduction to \R, a quick
-google search for "ecological analysis in R" will guide you to many
+google search for ``ecological analysis in R'' will guide you to many
 resources, including my introductory course
 \href{http://perceval.bio.nau.edu/downloads/igert/IntroR-Course_Notes/R-Course.pdf}{here}.
 
@@ -63,27 +66,28 @@ resources, including my introductory course
 %Importing data
 
 In order allow for users to extend \R's functionality, functions are
-grouped together into "packages" by programmers. This allows for \R to
+grouped together into ``packages'' by programmers. This allows for \R to
 be reduced to a core set of software that can be added to by obtaining
 and loading these other packages. At current count (March 2012), there
 are over 4000 packages contributed by the \R software community. This
 means, however, that any package that is not contained in the core \R
 distribution must be downloaded initially and each time \R is opened
-the package must be "libraried" (i.e. loaded into the working memory).
+the package must be ``libraried'' (i.e. loaded into the working memory).
 
 Here is the easiest way to do this:
 
 <<eval=false>>=
-###You only need to do this if you haven NOT installed the package before
   install.packages('ComGenR')
 
 @ 
 
 <<>>=
-###You will need to do this each time you open R
 library(ComGenR)
 
 @ 
+
+Once you have run \texttt{install.packages}, you'll only need to run
+\texttt{library} when you open up \R. 
 
 You can get some quick information on the package and any function by
 using the question mark symbol:
@@ -95,10 +99,10 @@ using the question mark symbol:
 
 Here, we will use an example dataset of
 a set of trees with genotypic and community data called
-\textit{cg_data.csv}. Let's load the data and take a quick look at
+\textit{cg\_data.csv}. Let's load the data and take a quick look at
 it's properties:
 
-<<echo=false>>=
+<<echo=false,results=hide>>=
 the.data <- read.csv('../../data/cg_data.csv')
 
 @ 
@@ -124,11 +128,11 @@ head(the.data)
 @ 
 
 For ease of conducting analyses, it is best to isolate the community
-and the "environmental" (i.e. tree ID, genotype and phenotype)
+and the ``environmental'' (i.e. tree ID, genotype and phenotype)
 data. This can be done in many ways, but we'll do it here by selecting
 the columns containing species abundance data (i.e. columns 4 to 28)
 and the genotype data (i.e. column 2) creating two new objects
-("com" and "geno"):
+(``com'' and ``geno''):
 
 <<>>=
 com <- the.data[,4:28]
@@ -140,7 +144,7 @@ geno
 
 @ 
 
-<<echo=false>>=
+<<echo=false,results=hide>>=
 com <- as.matrix(com)
 @ 
 
@@ -156,94 +160,375 @@ geno
 
 @ 
 
-We can tell that \R is now treating our "geno" values as categorical
-because it returns a list of the levels present in our "geno" object. 
+We can tell that \R is now treating our ``geno'' values as categorical
+because it returns a list of the levels present in our ``geno'' object. 
 
 \section{Community Composition}
 
-Now the we have the imported, checked and corrected the format of our
+Now the we have imported, checked and corrected the format of our
 data, we can start conducting analyses. A good first step is a visual
 analysis of the data. As community data are inherently multivariate,
 direct observation of the data requires the aid of sophisticated
 visualizations. Two useful approaches are heatmaps and
 ordinations. 
 
-%Heatmap
-<<>>=
+\subsection*{Heatmap}
+
+<<fig=true>>=
 heatmap(com)
 
 @ 
 
-%NMDS - regular and cross-hair
+\subsection*{NMDS Ordination}
 
 Non-metric Multidimensional Scaling (NMDS) ordination plots are a much
 more common, albeit abstract means of visualizing community data. In
 CG studies, it has also been used as a way to generate a trait-like
 vector that can be used in quantitative genetic analyses. We can
-quickly do this in \R:
+quickly do this in \R using functions from the \textit{vegan} and
+\textit{ecodist} packages:
 
 
 <<eval=true>>=
 d <- vegdist(com)
-nms <- nmds(d,mindim=1,maxdim=1,nits=3)
+nms <- nmds(d,mindim=2,maxdim=2,nits=3)
 
 @ 
 
 Note here that we first calculate the Bray-Curtis dissimilarity scores
-for each observation (which we call "d"). This distance matrix in then
-used to conduct the ordination. Here we set the "mindim" and "maxdim"
-arguments in the function to 1 so that we will get a set of
+for each observation (which we call ``d''). This distance matrix in then
+used to conduct the ordination. Here we set the ``mindim'' and ``maxdim''
+arguments in the function to 2 so that we will get a set of
 ordinations with that dimensionality. Because the NMDS procedure
 starts with a randomly generated set of numbers that are then adjusted
 until best represent the structure of the original distances of the
-data, we have also specified the "nits" argument to be 10, which will
-have the function output 10 ordinations. Use \?nmds more information on how
-the NMDS.
+data, we have also specified the ``nits'' argument to be 3, which will
+have the function output 3 ordinations. We then select the lowest
+``stress'' (i.e. the best fitted) ordination from our set of three.
+
+<<>>=
+nms <- nmds.min(nms)
+@ 
+
+Note first that the fit is below the arbitrary threshold of 0.2 and
+that the low number of iterations used here has been chosen purely for
+example's sake. Run \texttt{?nmds} to get a more detailed description
+of the NMDS and how to customize its functionality.
 
 
+We can now plot our ordination, overlaying our genotype information:
 
-%NMDS - stress and variance explained
-%Overlaying genetic info
-%Overlaying environmental info
-%Vectors - species
+<<fig=true>>=
+plot(nms,col=as.numeric(geno),pch=19)
 
-Note that the "geno" column in the dataset is treated as numbers, even
-though it is actually categorical (i.e. numbers distinguish
-genotypes). 
+@ 
 
+Although the stress of the ordination is low, it is still difficult to
+see the patterns of the genotypes. Another method can be used to plot
+our ordination using the centroids (i.e. multivariate means) and the
+standard errors. This can be done easily with this function from the
+\textit{ComGenR} pacakge:
+
+<<fig=true>>=
+ch.plot(nms,geno,plot.legend=TRUE,loc='topright')
+
+@ 
+
+\subsection*{Vectors}
+
+It is also easy to overlay other information (such as out phenotype) onto our ordination using
+vectors:
+
+<<fig=true>>=
+pheno <- the.data[,3]
+pheno.vector <- envfit(nms,pheno)
+ch.plot(nms,geno,plot.legend=TRUE,loc='topright')
+plot(pheno.vector,col='black')
+
+@ 
+
+
+\subsection*{PerMANOVA}
 
 %PERMANOVA - BC-distance, Clarke adjustment and adonis
-%Mantel - warning about ecodist conflict
-%Pairwise PERMANOVA - p-value adjustments
-%Relativising - species max 
 
-%Species genotype means and se
+Permutational Multivariate Analysis of Variance (PerMANOVA) has been
+developed by ecologists, namely Marti Andersen, to address the need
+for a multivariate test of compositional effects that accomodates the
+often non-normal distributions of community data. We can execute it
+easily in \R using the interestingly named \texttt{adonis} function
+from the \textit{vegan} package:
+
+<<>>=
+adonis(com~geno)
+
+@ 
+
+%Pairwise PERMANOVA - p-value adjustments
+The \textit{ComGenR} package provides an additional function for
+conducting pairwise PerMANOVAs for levels of a single factor, such as
+genotype, in order to identify the statistical differences among pairs
+of levels: 
+
+<<>>=
+pp.results <- pair.permanova(x=com,f=geno,nits=999)
+pp.results$p.mat
+
+@ 
+
+Note, these p-values are not adjusted for multiple tests. It has been
+stated that given the permutational nature of the test statistic used
+in PerMANOVA, that this is not necessary \cite{laughlin2007}. They
+can, however, be easily adjusted in \R, see the \texttt{?p.adjust}.
+
+\subsection*{Genotype Means for Species Abundances}
+
+Last, it is worth noting here that the \textit{ComGenR} package
+contains two functions to help calculate the means and standard errors
+for each species on a set of genotypes. This might be useful for
+plotting:
+
+<<>>=
+mean.g(com,geno)
+se.g(com,geno)
+
+@ 
 
 \section{Modeling and Quantifying Heritability}
 
+Community Genetics also seeks to quantify how much variation in the
+community is explained by genetic variation. The \textit{ComGenR}
+package has several functions for both modeling and quantifying the
+community level effects of genetic variation as developed in the
+Shuster et al. 2006 \cite{shuster2006} article. 
+
+\subsection*{Simulating Community Genetics}
 %cgSIM - genetic versus environmental variance
+
+In general, simulation modeling is a useful tool for exploring
+possible mechanistic explainations for patterns. As community
+geneticists are interested in understanding how genetics influences
+community patterns, it is useful to have a simple simulation
+framework. \textit{ComGenR} provides a set of functions to do
+this. Described more fully here \cite{shuster2006}, briefly the model
+simulates the response of a community of dependent species to
+selection imposed by genetically based phenotypic variation in a
+foundation species. This can be done by first creating a set of
+``trees'' and a set of ``insects'' that form a dependent community. This
+can be done by hand, but \textit{ComGenR} provides two functions to
+easily do this:
+
+<<>>=
+trees <- gpmTrees()
+insects <- gpmCom()
+
+@ 
+
+Note the structure of these two matrices:
+
+<<>>=
+head(trees)
+head(insects)
+@ 
+
+The ``trees'' matrix has two columns: geno and pheno. The ``geno'' value is the
+genotype of each tree in each row and ``pheno'' is the associated
+phenotype that is used to determine the effect of that tree on the
+arthropod community. The ``insects'' matrix has phenotypic values for
+each insect species in each row. These ``insect'' values are generated
+randomly using a heterkaryotic genome model from within a range of
+user determined values for each of two alleles. 
+
+Now, these values can be used to simulate the response of a community
+of arthropods:
+
+<<>>=
+our.sim <- cgSim(trees,insects,reps=1,YY=5,GG=5)
+
+@ 
+
+This outputs a set of simulated communities. The ``reps'', ``YY'' and ``GG'' arguments
+determine the number of iterations, environmental scenarios and
+selection intensity scenarios. For each environmental scenario the
+effect of the genetic variance is heald constant and the amount of
+random noise introduced by non-genetic influences is
+increased. Similarly, each selection intensity scenario increases the
+effect of genetic variation while holding the influence of the
+environment constant. 
+
 %Isolating an NMDS axis - pros-cons and possible pitfalls
+\subsection*{NMDS Community Trait}
+
+Per the methods of Shuster et al. 2006, we can take one of our
+simulated matrices and summarize the variation of the community with
+an NMDS ordination. This is done in order to be able to treat the
+multivariate community as a univariate trait that has similar
+statistical properties as traits analyzed in quantitative genetics
+(e.g. univariate and normally distributed). We can use the same
+ordination methods that we used above to get a single NMDS ordination
+axis for a simulated community:
+
+<<>>=
+com.sim <- our.sim[[1]][[1]][[5]]
+d <- vegdist(com.sim)
+nms.sim <- nmds(d,mindim=1,maxdim=1)
+nms.sim <- nmds.min(nms.sim)
+nms.sim <- nms.sim[,1]
+
+@ 
+
+<<fig=true>>=
+hist(nms.sim)
+@ 
+
+In this output, note both the stress and the $r^2$ of the final
+configuration. This similarly indicates how well the ordination
+represents the original data. As one would expect, this representation
+is never perfect as it is intended to be an abstraction of the
+original data. The user should be familiar with the meaning of
+ordinated scores and how they can and should be interpreted. 
+
+
+\subsection*{Community Heritability}
 %getH2C - balanced and unbalanced design auto-detect
+We can now use this ordinated representation of the community to
+calculate the community heritability value for this simulated
+population of trees:
+
+<<>>=
+geno.sim <- factor(trees[,1])
+getH2C(nms.sim,geno.sim)
+
+@ 
+
+The output gives heritability score for the community, as represented
+by the ordination, along with associated confidence limits. 
 
 \section{Network Modeling and Co-occurrence Analyses}
 
-%What is a network?
-
-%Why do we care?
-
-Network modeling allows a broader view of the whole community. 
-
-NMDS uses the multivariate distance between observations. 
+Community Ecology and Community Genetics deal with complex sets of
+organisms largely because these fields aknowledge the need to study
+groups of organisms. A primary motivation for this is that species
+interact and these interactions contribute to variation in their
+distributions, abundances and function. Thus, communities are formed
+by webs or networks of interacting species and a complete
+understanding of communities requires an understanding of these
+networks. Thus, the \textit{ComGenR} package provides tools for both
+modeling and analyzing relationships among species comprising
+communities. 
 
 %What do co-occurrences tell us?
 
-Networks and co-occurrence analyses focus on the patterns of the
-species with respect to each other.
+\subsection*{Null-Model Co-occurrence Analysis}
+
+Given the motivation described above, it is unfortunate that
+interaction data is exceedingly rare and difficult to obtain for
+ecological studies. Initially developed for biogrogrphic studies,
+co-occurrence analysis was developed to bridge this information
+gap. At its inception \cite{diamond1975}, the analysis of species
+co-occurrence patterns was inteded to generate and test hypotheses
+about how communities assemble \cite{gotelli2000}. It was posited that
+interactions among species influenced the distribution of species in
+space, namely through competitive exclusion \cite{diamond1975}, though
+later work has demonstrated the importance of positive interactions
+\cite{maestre2009}. 
+
+Analyzing co-occurrence patterns in CG data provides a well developed
+means to examine the co-variances among species. Once the effect of
+genetic variation on community composition has been established,
+co-occurrence analysis can then be used to examine the overarching
+structure in the commuity data due in part to that genetic effect. To
+do this, we use permutation based null modeling tools provided in the
+\textit{vegan} package. \textit{ComGenR} provides high level access to
+these functions, so that these analyses can be performed as follows:
 
 %Co-occurrence (overall)
+
+<<>>=
+com[com<1] <- 0
+cnm.test(com,nits=25)
+
+@ 
+
+It is important to consider a threshold of detection for species prior
+to running co-occurrence analysis, since it does not use abundance
+data but presence-absence data (i.e. occurrences and non-occurrences).
+Here, we set values less than 1 to zero.
+
 %Network (overall)
-%Network plot
-%Network statistics
+
+Although co-occurrence analyses allow us to test for the average
+structure of co-occurrence patterns in the community, they do not
+resolve the structure those patterns. Although the network approach
+has been employed in ecology for a relatively long time
+(e.g. \cite{macarthur1955}), recent developments in analytical methods
+have expanded utility and scope of this approach
+\cite{araujo2011}. The \textit{ComGenR} package provides several
+functions for the user to analyze CG data using a network modeling and
+analytical approach. 
+
+First to compliment the co-occurrence analysis, it is extremely useful
+to plot community data as a bipartite network. This re-representation
+of the data in this context allows for the examination of
+co-occurrence patterns. To do this, we use tools from the
+\textit{bipartite} package:
+
+
+<<>>=
+com. <- com
+com.[com.<=85] <- 0 
+com. <- com.[,order(apply(com,2,sum),decreasing=TRUE)]
+rownames(com.) <- the.data$tree.id
+geno.color <- rainbow(nlevels(geno))[as.numeric(geno)]
+plotweb(com.,method='normal',col.low=geno.color,text.rot=90)
+
+@ 
+
+It's useful to note here that previous studies of bipartite networks
+in ecology have shown that these networks tend to have a nested
+structure that has potentially stabilizing effects on the community as
+a whole \cite{bascompte2003}. The \textit{bipartite} package provides
+a means to test for this. For more information see \texttt{?nestedness}.
+
+
+%%%NOTE: Araujo links co-occurrence and compositional analyses through
+%%%the use of distances/dissimilarities
+
+Next, we can use another network approach to examine these
+co-occurrence patterns with regard to the relationship \textit{among}
+species in the community matrix. Before do so, it is important to
+provide a brief caveat. This approach is meant to explore the data,
+and, toward this end, it provides a perspective that appears to
+resolve interactions among species. While this may be the case, this
+is not testable with the analysis itself. It is up to the user to
+decide to what extent these results can be used to speak to the
+structure of true ecological interactions (e.g. trophic or
+pollination) given the nature of the data and other information about
+the community. However, analysis is only useful with appropriate
+interpretation, and it can be argued that ecological interactions tend
+to occur locally, and, thus if species are observed at an appropriate
+scale, it is possible to make inferences about the potential for
+interactions to occur, given non-random patterns of co-occurrence
+\cite{araujo2011}.
+
+Here is how to conduct the co-occurrence based network modeling
+described in Araujo et al. 2011 \cite{araujo2011} in the
+\textit{ComGenR} package:
+
+
+%% <<fig=true>>=
+%% net <- CoNetwork(com.)
+%% net
+%% @ 
+
+Once this network has been generated, we can now
+plot. \textit{ComGenR} provides an easy to use function built on the
+\texttt{gplot} function in the \textit{sna} package:
+
+<<fig=true>>=
+mgp(net,com.,displaylabels=TRUE)
+@ 
+
 
 \section{A Template Analysis}
 
@@ -255,6 +540,10 @@ species with respect to each other.
 %Network model (stand - all and condensed)
 %Tree level co-occurrence (genotype effect test)
 %Tree level network (average)
+
+To help guide the user, we present a template for using the package
+and how one might go about conducting an analysis on a dataset from a
+CG study.
 
 <<eval=false>>=
 
@@ -284,6 +573,8 @@ cnm.results
 
 @ 
 
+
+
 %% %%Figure construction
 %% <<echo=false,results=hide,label=fig1,include=false>>=
 %% @ 
@@ -301,7 +592,7 @@ cnm.results
 
 
 %% %%Activate for bibtex vibliography
-\bibliographystyle{plain}
+\bibliographystyle{unsrt}
 \bibliography{ComGenR_vignette.bib}
 
 

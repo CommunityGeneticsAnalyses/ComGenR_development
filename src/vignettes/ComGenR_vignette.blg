@@ -5,15 +5,15 @@ The style file: unsrt.bst
 Database file #1: ComGenR_vignette.bib.bib
 You've used 12 entries,
             1791 wiz_defined-function locations,
-            523 strings with 6030 characters,
-and the built_in function-call counts, 3286 in all, are:
+            523 strings with 6031 characters,
+and the built_in function-call counts, 3299 in all, are:
 = -- 261
-> -- 216
+> -- 219
 < -- 0
-+ -- 77
-- -- 65
-* -- 274
-:= -- 568
++ -- 78
+- -- 66
+* -- 276
+:= -- 571
 add.period$ -- 36
 call.type$ -- 12
 change.case$ -- 11
@@ -21,8 +21,8 @@ chr.to.int$ -- 0
 cite$ -- 12
 duplicate$ -- 109
 empty$ -- 280
-format.name$ -- 65
-if$ -- 692
+format.name$ -- 66
+if$ -- 694
 int.to.chr$ -- 0
 int.to.str$ -- 12
 missing$ -- 13
