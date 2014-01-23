@@ -516,10 +516,10 @@ described in Araujo et al. 2011 \cite{araujo2011} in the
 \textit{ComGenR} package:
 
 
-%% <<fig=true>>=
-%% net <- CoNetwork(com.)
-%% net
-%% @ 
+<<>>=
+net <- CoNetwork(com.)
+net
+@ 
 
 Once this network has been generated, we can now
 plot. \textit{ComGenR} provides an easy to use function built on the

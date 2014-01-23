@@ -1,0 +1,7 @@
+
+
+###generating trees to use
+trees <- tree.pheno[,2] + runif(T,0,1) * VeT - VeT/2 #scores are in second column of trees
+###filling phenotypic values for trees (same set of trees for all scenarios
+###NOTE: this is chaged from the loop in original code
+trees <- matrix(rep(trees,GG),nrow=T)

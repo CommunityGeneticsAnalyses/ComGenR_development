@@ -8,6 +8,7 @@
 \geometry{letterpaper}                   % ... or a4paper or a5paper or ... 
 %\usepackage[parfill]{parskip}    % Activate to begin paragraphs with an empty line rather than an indent
 \usepackage{multicol} % \begin{multicols}{number of columns} \end{multicols}
+\usepackage{lineno}
 \usepackage{graphicx}
 \usepackage{amssymb}
 \usepackage{Sweave}
@@ -26,6 +27,7 @@
 
 \begin{document}
 \maketitle
+\linenumbers %%add line numbers
 
 Community Genetics is a field that works at the interface between
 ecological genetics and community ecology. Being inherently

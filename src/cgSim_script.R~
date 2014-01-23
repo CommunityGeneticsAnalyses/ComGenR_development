@@ -1,0 +1,6 @@
+
+###Make the trees
+tree.gpm <- gpmTrees()
+trees <- simTrees(tree.gpm=tree.gpm)
+
+###Make the insects

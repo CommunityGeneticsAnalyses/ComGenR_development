@@ -8,6 +8,7 @@
 \geometry{letterpaper}                   % ... or a4paper or a5paper or ... 
 %\usepackage[parfill]{parskip}    % Activate to begin paragraphs with an empty line rather than an indent
 \usepackage{multicol} % \begin{multicols}{number of columns} \end{multicols}
+\usepackage{lineno}
 \usepackage{graphicx}
 \usepackage{amssymb}
 \usepackage{Sweave}
@@ -26,6 +27,7 @@
 
 \begin{document}
 \maketitle
+\linenumbers %%add line numbers
 
 Community Genetics is a field that works at the interface between
 ecological genetics and community ecology. Being inherently
@@ -426,8 +428,8 @@ have the function output 3 ordinations. We then select the lowest
 > nms <- nmds.min(nms)
 \end{Sinput}
 \begin{Soutput}
-Minimum stress for given dimensionality:  0.1102475 
-r^2 for minimum stress configuration:  0.9698926 
+Minimum stress for given dimensionality:  0.1090815 
+r^2 for minimum stress configuration:  0.9708537 
 \end{Soutput}
 \end{Schunk}
 
@@ -572,17 +574,17 @@ of levels:
 > pp.results$p.mat
 \end{Sinput}
 \begin{Soutput}
-    1     2     3     4     5     6     7     8     9    10
-1  NA 0.261 0.106 0.025 0.388 0.077 0.010 0.014 0.014 0.013
-2  NA    NA 0.542 0.034 0.941 0.337 0.008 0.049 0.007 0.004
-3  NA    NA    NA 0.102 0.342 0.603 0.035 0.157 0.010 0.009
-4  NA    NA    NA    NA 0.027 0.193 0.293 0.965 0.075 0.022
-5  NA    NA    NA    NA    NA 0.181 0.019 0.037 0.013 0.010
-6  NA    NA    NA    NA    NA    NA 0.054 0.304 0.026 0.015
-7  NA    NA    NA    NA    NA    NA    NA 0.325 0.268 0.093
-8  NA    NA    NA    NA    NA    NA    NA    NA 0.084 0.025
-9  NA    NA    NA    NA    NA    NA    NA    NA    NA 0.348
-10 NA    NA    NA    NA    NA    NA    NA    NA    NA    NA
+    1    2     3     4     5     6     7     8     9    10
+1  NA 0.25 0.095 0.022 0.392 0.087 0.006 0.017 0.006 0.008
+2  NA   NA 0.554 0.025 0.933 0.335 0.011 0.045 0.008 0.018
+3  NA   NA    NA 0.104 0.351 0.620 0.038 0.167 0.009 0.004
+4  NA   NA    NA    NA 0.020 0.200 0.303 0.964 0.068 0.029
+5  NA   NA    NA    NA    NA 0.174 0.009 0.038 0.008 0.016
+6  NA   NA    NA    NA    NA    NA 0.047 0.333 0.023 0.016
+7  NA   NA    NA    NA    NA    NA    NA 0.316 0.276 0.097
+8  NA   NA    NA    NA    NA    NA    NA    NA 0.080 0.029
+9  NA   NA    NA    NA    NA    NA    NA    NA    NA 0.351
+10 NA   NA    NA    NA    NA    NA    NA    NA    NA    NA
 \end{Soutput}
 \begin{Sinput}
 > 
@@ -756,13 +758,13 @@ Note the structure of these two matrices:
 > head(insects)
 \end{Sinput}
 \begin{Soutput}
-         [,1]      [,2]
-[1,] 2.668155  3.451313
-[2,] 6.721325  7.999297
-[3,] 6.448846  7.297900
-[4,] 5.664091  5.855590
-[5,] 6.870599  7.561521
-[6,] 9.371366 10.567356
+         [,1]     [,2]
+[1,] 3.926603 5.279374
+[2,] 2.406221 2.790208
+[3,] 3.513949 4.014287
+[4,] 4.116536 5.598586
+[5,] 6.693911 8.076370
+[6,] 8.754957 9.277716
 \end{Soutput}
 \end{Schunk}
 
@@ -856,8 +858,8 @@ Using random start configuration
 > nms.sim <- nmds.min(nms.sim)
 \end{Sinput}
 \begin{Soutput}
-Minimum stress for given dimensionality:  0.03004015 
-r^2 for minimum stress configuration:  0.9980397 
+Minimum stress for given dimensionality:  0.2351224 
+r^2 for minimum stress configuration:  0.8522228 
 \end{Soutput}
 \begin{Sinput}
 > nms.sim <- nms.sim[,1]
@@ -893,9 +895,9 @@ population of trees:
 \end{Sinput}
 \begin{Soutput}
       H2C        CI        SE 
-0.5582783 0.2950560 0.1505388 
- lower.CI       H2C  upper.CI 
-0.2632223 0.5582783 0.8533343 
+0.3782918 0.3228069 0.1646974 
+  lower.CI        H2C   upper.CI 
+0.05548489 0.37829178 0.70109867 
 \end{Soutput}
 \begin{Sinput}
 > 
@@ -1004,7 +1006,7 @@ these functions, so that these analyses can be performed as follows:
   |                                                        
   |++++++++++++++++++++++++++++++++++++++++++++++++++| 100%
       SES   lower.p   upper.p 
--42.85706   0.00000   1.00000 
+-31.16463   0.00000   1.00000 
 \end{Soutput}
 \begin{Sinput}
 > 
@@ -1175,32 +1177,32 @@ plot. \textit{ComGenR} provides an easy to use function built on the
 > mgp(net,com.,displaylabels=TRUE)
 \end{Sinput}
 \begin{Soutput}
-             x        y
- [1,] 38.81950 22.02641
- [2,] 41.55542 29.73309
- [3,] 49.52017 29.88970
- [4,] 38.35226 19.52846
- [5,] 48.78940 10.00295
- [6,] 39.59314 16.05584
- [7,] 38.40427 25.24226
- [8,] 48.11713 15.36902
- [9,] 39.96504 26.66322
-[10,] 38.46984 23.86893
-[11,] 51.60774 14.30781
-[12,] 54.30462 19.40306
-[13,] 56.46616 20.28039
-[14,] 51.80492 20.12208
-[15,] 57.28974 20.59832
-[16,] 54.37428 17.34724
-[17,] 53.03839 19.95993
-[18,] 41.76408 11.39318
-[19,] 56.07488 18.98300
-[20,] 54.31746 23.10148
-[21,] 56.25011 23.58857
-[22,] 51.57154 26.07460
-[23,] 53.58076 27.82475
-[24,] 52.49217 24.45522
-[25,] 55.43395 26.77914
+              x          y
+ [1,] -56.09028 12.8335997
+ [2,] -51.10662 -3.0461248
+ [3,] -62.29796 10.2837690
+ [4,] -49.82587  3.0815011
+ [5,] -49.97316  5.6577907
+ [6,] -51.36243  9.2597306
+ [7,] -53.52155 -6.0709924
+ [8,] -63.54155 -5.4589604
+ [9,] -50.52686 -1.7226346
+[10,] -50.08108  1.1003356
+[11,] -60.09269 -5.1221387
+[12,] -66.24933  0.3316835
+[13,] -67.87317  3.4166764
+[14,] -63.84510  0.4602022
+[15,] -69.28568  2.4588829
+[16,] -66.82989 -1.4678079
+[17,] -65.48384  1.5986942
+[18,] -49.56236 -0.5908006
+[19,] -68.26681  0.8757650
+[20,] -66.05691  4.2340972
+[21,] -68.03687  5.5876871
+[22,] -63.58325  6.4050365
+[23,] -64.57341  8.4839962
+[24,] -63.99240  4.9959754
+[25,] -66.43048  7.9066987
 \end{Soutput}
 \end{Schunk}
 \includegraphics{ComGenR_vignette-030}
