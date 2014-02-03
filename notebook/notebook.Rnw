@@ -35,6 +35,41 @@
 %%find . -type f -name '*~' | xargs rm -f
 
 
+\section{27 Jan 2014}
+
+Looking into linear algebra solution to remove loops in co.net
+function
+
+<<>>=
+library(ComGenR)
+x <- matrix(sample(c(0,1),200,replace=TRUE,prob=c(0.6,0.4)),nrow=10)
+t(x)%*%x
+
+test <- matrix(0,nrow=ncol(x),ncol=ncol(x))
+for (i in 1:ncol(x)){
+  for (j in 1:ncol(x)){
+    test[i,j] <- sum(x[,i]*x[,j])
+  }
+}
+all(test == (t(x)%*%x))
+
+@ 
+
+It works. You need to take the transpose of a obs-spp matrix so that
+you get a spp-spp matrix. You can therefore re-write the function as:
+
+<<>>=
+x[x!=0] <- 1
+colnames(x) <- paste('Sp',(1:ncol(x)),sep='')
+A <- t(x)%*%x
+
+###Not sure how best to get the probabilities.
+
+@ 
+
+
+
+
 \section{Summary}
 
 Community genetics seeks to identify the community level impacts of
