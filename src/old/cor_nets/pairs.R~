@@ -73,16 +73,6 @@ panel.hccor <- function(x, y, digits=2, prefix="", cex.cor,method='spearman',alp
     if (p.cor<=alpha){text(0.5, 0.5, txt, cex = 1.5,col='dark red')}else {text(0.5, 0.5, txt, cex = 1)}
 }
 
-###Smoothing function
-panel.smooth <- function (x, y, col = par("col"), bg = NA, pch = par("pch"), 
-    cex = 1, col.smooth = "red", span = 1, iter = 3, ...) 
-{
-    points(x, y, pch = pch, col = col, bg = bg, cex = cex)
-    ok <- is.finite(x) & is.finite(y)
-    if (any(ok)) 
-        lines(stats::lowess(x[ok], y[ok], f = span, iter = iter), 
-            col = col.smooth, ...)
-}
 
 ### put least square regression lines in the panel
 #black least squares lines
@@ -99,8 +89,8 @@ panel.lmw <- function (x, y, ...) {
 
 #red least squares lines
 panel.lmr <- function (x, y, ...) {
-  points(x, y, pch=20, ...) # this is what the default panel function does (except for pch=)
-  abline(lm(y~x), lwd=2, col='red') # trend line from LOWESS smoother
+	points(x, y, pch=20, ...) # this is what the default panel function does (except for pch=)
+	abline(lm(y~x), lwd=2, col='red') # trend line from LOWESS smoother
 }
 
 
